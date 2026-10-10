@@ -1,0 +1,9 @@
+{
+  "source": "https://teavm.org/playground/3/",
+  "files": {
+    "compiler.wasm": "7f3828e4b7bddf5504dadebfc4016e40f4441e15ee0519071781813ba2ed3a4c",
+    "compiler.wasm-runtime.js": "9ff6a6771f698be00ab9d5c7b46d904350a8d4115dc0b409553f31ed66688a55",
+    "compile-classlib-teavm.bin": "e80ae10423a39290c5f20b6bb6da34d21c3ad0a75cd8dbdda4998d2813045e15",
+    "runtime-classlib-teavm.bin": "ea670e71967eda93828cb894c1741a8ed2e94b3422eb99cb9eccec0de67daaa8"
+  }
+}
