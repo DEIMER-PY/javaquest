@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="340" viewBox="0 0 440 340" fill="none">
+<ellipse cx="229" cy="303" rx="128" ry="19" fill="#1B4A38" opacity=".12"/>
+<path d="M122 132C122 87 161 55 218 55s106 32 106 77v89H122z" fill="#D9EAAF"/>
+<rect x="126" y="120" width="189" height="120" rx="46" fill="#F8FAE9" stroke="#254B36" stroke-width="5"/>
+<rect x="146" y="139" width="148" height="64" rx="27" fill="#244E3A"/>
+<path d="M168 166l12-8 12 8M245 166l12-8 12 8" stroke="#D8F89C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M204 182q15 14 30 0" stroke="#D8F89C" stroke-width="4" stroke-linecap="round"/>
+<path d="M185 240h67l24 52H161z" fill="#91B96E" stroke="#254B36" stroke-width="5"/>
+<rect x="176" y="248" width="86" height="40" rx="10" fill="#F8FAE9" stroke="#254B36" stroke-width="4"/>
+<path d="M190 265l-8 5 8 5M246 265l8 5-8 5M222 261l-7 18" stroke="#557B3E" stroke-width="4" stroke-linecap="round"/>
+<path d="M129 211l-34 44M314 209l28 18 29-21" stroke="#254B36" stroke-width="15" stroke-linecap="round"/>
+<path d="M129 211l-34 44M314 209l28 18 29-21" stroke="#BAD78A" stroke-width="9" stroke-linecap="round"/>
+<rect x="57" y="234" width="71" height="44" rx="12" fill="#FFBD8E" stroke="#254B36" stroke-width="4"/>
+<path d="M126 241h9a12 12 0 010 25h-9" stroke="#254B36" stroke-width="4"/>
+<path d="M81 222q-12-10 0-20M101 222q-12-10 0-20" stroke="#7C9B61" stroke-width="3" stroke-linecap="round"/>
+<path d="M217 55V35" stroke="#254B36" stroke-width="5"/><circle cx="217" cy="27" r="10" fill="#F3B674" stroke="#254B36" stroke-width="4"/>
+<rect x="91" y="151" width="33" height="48" rx="13" fill="#91B96E" stroke="#254B36" stroke-width="4"/>
+<rect x="316" y="151" width="24" height="48" rx="11" fill="#91B96E" stroke="#254B36" stroke-width="4"/>
+<path d="M171 290l-9 13h-33M267 290l8 13h34" stroke="#254B36" stroke-width="12" stroke-linecap="round"/>
+<path d="M357 77l8 16 18 3-13 12 3 18-16-9-16 9 3-18-13-12 18-3z" fill="#F2BB79"/>
+<path d="M62 103l5 10 12 2-9 8 2 12-10-6-10 6 2-12-9-8 12-2z" fill="#93BB6B"/>
+<circle cx="384" cy="170" r="6" fill="#A6C584"/><circle cx="85" cy="60" r="5" fill="#F2BB79"/>
+</svg>
