@@ -1,0 +1,16 @@
+# Third-party notices
+
+JavaQuest's MIT license applies to original application code, not bundled dependencies.
+
+| Resource                                      | Attribution                                                   | License / source                                                                                                                                                                                                         |
+| --------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| javac + TeaVM browser compiler                | Alexey Andreev and contributors                               | [Apache-2.0](https://github.com/konsoletyper/teavm-javac), copyright notices retained in upstream runtime                                                                                                                |
+| OpenJDK components in compiler binary         | OpenJDK contributors                                          | [GPL-2.0 with Classpath Exception](https://openjdk.org/legal/gplv2+ce.html); original upstream source available through [teavm-javac build configuration](https://github.com/konsoletyper/teavm-javac/tree/master/javac) |
+| shadcn/ui button pattern                      | shadcn, copyright 2023                                        | [MIT](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md), adapted in `src/components/ui/button.tsx`                                                                                                                   |
+| Lucide icons                                  | Lucide contributors, Michael Hettmer and Feather contributors | [ISC and retained MIT portions](https://github.com/lucide-icons/lucide/blob/main/LICENSE)                                                                                                                                |
+| CodeMirror                                    | Marijn Haverbeke and contributors                             | [MIT](https://github.com/codemirror/dev/)                                                                                                                                                                                |
+| React, Next.js, Tailwind, Radix, Supabase SDK | Respective contributors                                       | See their licenses retained under `node_modules` and exact versions in `package-lock.json`                                                                                                                               |
+
+Original Byte robot and JVM diagram were drawn as SVG for JavaQuest. They are not Duolingo assets. External videos are linked, not copied or redistributed.
+
+`scripts/prepare-java.mjs` retrieves the exact runtime resources recorded in `scripts/java-runtime-lock.json` and rejects different SHA-256 hashes. Runtime files are build artifacts rather than committed binaries. Preserve upstream licenses when redistributing those artifacts; the preparation script includes upstream license texts alongside them.
