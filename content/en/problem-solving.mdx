@@ -1,0 +1,25 @@
+Before coding, define inputs, outputs, and rules. Split an application into small tasks. For a calculator: choose an operation, validate data, calculate, and display.
+
+Work examples by hand and consider zero, negatives, and boundaries. Methods separate responsibilities. A clear solution with checked cases is more useful than a short one you do not understand. Apply this in the Calculator project.
+
+## Observe and run
+
+```java
+public class Main {
+    static double promedio(int[] ns) {
+        if(ns.length==0) throw new IllegalArgumentException("Array vacío");
+        int total=0;
+        for(int n:ns) total+=n;
+        return (double)total/ns.length;
+    }
+    public static void main(String[] args) { System.out.println(promedio(new int[]{7,8,9})); }
+}
+```
+
+## Your mission
+
+Create a method returning the maximum in a nonempty array.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

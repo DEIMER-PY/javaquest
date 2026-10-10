@@ -1,0 +1,26 @@
+Combina objetos, listas y validaciones en un gestor de tareas en memoria. Cada tarea tiene título y estado. El servicio agrega tareas, marca completadas y presenta resultados. En la siguiente ruta incorporarás persistencia.
+
+Empieza con datos definidos en el código y después añade un menú con Scanner en tu equipo. Comprueba lista vacía, título vacío y selección inválida. Guardar en memoria no conserva datos al cerrar el proceso; una base de datos resolverá otro requisito distinto.
+
+## Observa y ejecuta
+
+```java
+import java.util.ArrayList;
+class Tarea { String titulo; boolean completa; Tarea(String t) { titulo=t; } }
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Tarea> ts=new ArrayList<>();
+        ts.add(new Tarea("Aprender Java"));
+        ts.get(0).completa=true;
+        for(Tarea t:ts) System.out.println(t.titulo + ": " + t.completa);
+    }
+}
+```
+
+## Tu misión
+
+Añade una segunda tarea pendiente e imprime ambos estados. Continúa con el proyecto guiado.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

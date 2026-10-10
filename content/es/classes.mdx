@@ -1,0 +1,23 @@
+Una clase define un tipo con estado y comportamiento. Un objeto es una instancia de esa clase. `new` crea una instancia; cada objeto puede tener valores distintos.
+
+Modela conceptos del problema, como Libro o Tarea. Evita crear una clase enorme que haga todo. Aquí usamos una segunda clase en el mismo archivo sin public; después separarás cada clase pública en su propio archivo.
+
+## Observa y ejecuta
+
+```java
+class Libro { String titulo="Java"; }
+public class Main {
+    public static void main(String[] args) {
+        Libro libro=new Libro();
+        System.out.println(libro.titulo);
+    }
+}
+```
+
+## Tu misión
+
+Crea una clase Mascota con nombre e imprime el nombre de una instancia.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

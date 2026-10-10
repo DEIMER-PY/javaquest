@@ -1,0 +1,21 @@
+A project needs structure beyond working code. Packages group responsibilities and correspond to directory paths. Maven standardizes src/main/java and src/test/java.
+
+Separate models, logic, and input/output. The task manager will have Task and a service managing the list. Document execution and verify rules with concrete cases. Build tools and testing form the next path.
+
+## Observe and run
+
+```java
+class Tarea { String titulo; Tarea(String t) { titulo=t; } }
+class Gestor { Tarea crear(String t) { return new Tarea(t); } }
+public class Main {
+    public static void main(String[] args) { System.out.println(new Gestor().crear("Practicar").titulo); }
+}
+```
+
+## Your mission
+
+Reject an empty task title at creation.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

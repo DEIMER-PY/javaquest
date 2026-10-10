@@ -1,0 +1,23 @@
+Programs receive data, process it, and produce results. `System.out` writes output; `System.in` represents standard input. With a local JDK, `Scanner` reads terminal text or numbers. Scanner is unavailable in this playground: use predefined values to practice the logic.
+
+Locally, create `Scanner input = new Scanner(System.in);` and use `nextLine()` or `nextInt()`. Mixing them requires care because `nextInt()` leaves the newline pending. Another approach is reading a line and converting it with `Integer.parseInt`. Validate user input because it may not be a number.
+
+## Observe and run
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String entrada = "21";
+        int edad = Integer.parseInt(entrada);
+        System.out.println("El próximo año: " + (edad + 1));
+    }
+}
+```
+
+## Your mission
+
+Convert the text 12 to an integer and print twice its value. Try Scanner locally using the guide.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

@@ -1,0 +1,24 @@
+La encapsulación mantiene detalles internos bajo control. Declara atributos `private` y expón operaciones que preserven reglas. No basta con añadir setters a todo: piensa qué cambios deben estar permitidos.
+
+Una cuenta no debe recibir depósitos negativos. El método depositar valida la cantidad antes de modificar saldo. Los getters permiten consultar el estado sin exponer una modificación directa.
+
+## Observa y ejecuta
+
+```java
+class Cuenta {
+    private int saldo;
+    void depositar(int monto) { if(monto<=0) throw new IllegalArgumentException("Monto inválido"); saldo+=monto; }
+    int getSaldo() { return saldo; }
+}
+public class Main {
+    public static void main(String[] args) { Cuenta c=new Cuenta(); c.depositar(10); System.out.println(c.getSaldo()); }
+}
+```
+
+## Tu misión
+
+Deposita 10 y luego 15. Comprueba que el saldo sea 25.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

@@ -1,0 +1,21 @@
+Un proyecto necesita estructura además de código que funcione. Usa paquetes para agrupar responsabilidades. El nombre del paquete corresponde a su ruta de carpetas. Maven estandariza `src/main/java` y `src/test/java`.
+
+Separa modelo, lógica y entrada/salida. El gestor de tareas tendrá Tarea y un servicio que administra la lista. Documenta cómo ejecutar el programa y comprueba las reglas con casos concretos. Las herramientas de construcción y pruebas serán la siguiente ruta.
+
+## Observa y ejecuta
+
+```java
+class Tarea { String titulo; Tarea(String t) { titulo=t; } }
+class Gestor { Tarea crear(String t) { return new Tarea(t); } }
+public class Main {
+    public static void main(String[] args) { System.out.println(new Gestor().crear("Practicar").titulo); }
+}
+```
+
+## Tu misión
+
+Añade validación para rechazar un título vacío al crear una tarea.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

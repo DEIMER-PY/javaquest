@@ -1,0 +1,21 @@
+An interface defines a contract. A class uses implements to fulfill it. The methods here are public, and implementations must preserve that visibility.
+
+A class can implement multiple interfaces. Contracts let you substitute implementations and write tests. Avoid huge interfaces forcing implementations to provide unrelated capabilities.
+
+## Observe and run
+
+```java
+interface Saludable { String saludar(); }
+class Persona implements Saludable { public String saludar() { return "Hola"; } }
+public class Main {
+    public static void main(String[] args) { Saludable p=new Persona(); System.out.println(p.saludar()); }
+}
+```
+
+## Your mission
+
+Create Robot implementing the contract and returning Hello, human.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

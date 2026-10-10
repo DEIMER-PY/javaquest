@@ -1,0 +1,21 @@
+La herencia expresa una relación «es un»: un Perro es un Animal. `extends` permite derivar una clase y `@Override` identifica un método sobrescrito. Java permite extender una sola clase.
+
+El polimorfismo permite usar una referencia Animal cuyo objeto real es Perro. La llamada ejecuta la implementación del objeto. No uses herencia solo para ahorrar líneas: para relaciones «tiene un», la composición suele ser más adecuada.
+
+## Observa y ejecuta
+
+```java
+class Animal { String sonido() { return "..."; } }
+class Perro extends Animal { @Override String sonido() { return "Guau"; } }
+public class Main {
+    public static void main(String[] args) { Animal a=new Perro(); System.out.println(a.sonido()); }
+}
+```
+
+## Tu misión
+
+Crea Gato que sobrescriba sonido para devolver Miau.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

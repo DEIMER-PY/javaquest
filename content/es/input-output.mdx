@@ -1,0 +1,23 @@
+Un programa recibe datos, los procesa y produce resultados. `System.out` permite escribir; `System.in` representa la entrada estándar. En un JDK local, `Scanner` puede leer texto o números desde la terminal. En este playground Scanner no está disponible: utiliza valores definidos para practicar la lógica.
+
+En ejecución local, crea `Scanner entrada = new Scanner(System.in);` y lee con `nextLine()` o `nextInt()`. Mezclar ambos requiere cuidado porque `nextInt()` deja pendiente el salto de línea. Una alternativa es leer una línea y convertirla con `Integer.parseInt`. Valida el texto recibido: un usuario puede escribir algo que no sea un número.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String entrada = "21";
+        int edad = Integer.parseInt(entrada);
+        System.out.println("El próximo año: " + (edad + 1));
+    }
+}
+```
+
+## Tu misión
+
+Convierte el texto 12 a entero e imprime su doble. Prueba Scanner en tu equipo siguiendo la guía.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

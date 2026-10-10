@@ -1,0 +1,23 @@
+A constructor initializes an object. It has the class name and no return type. Declaring one prevents Java from automatically adding a no-argument constructor.
+
+`this` refers to the current instance. In `this.name = name`, the left side is the field and the right side the parameter. Validate creation data to avoid invalid initial states.
+
+## Observe and run
+
+```java
+class Persona {
+    String nombre;
+    Persona(String nombre) { this.nombre=nombre; }
+}
+public class Main {
+    public static void main(String[] args) { System.out.println(new Persona("Ada").nombre); }
+}
+```
+
+## Your mission
+
+Add age to the Person constructor and display it.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

@@ -1,0 +1,24 @@
+A conversion can widen or narrow a type. Assigning an `int` to a `double` is usually automatic; converting `double` to `int` requires a cast and discards the fraction rather than rounding. Text-to-number conversion is different: use methods such as `Integer.parseInt`.
+
+Use `final` for values that must not be reassigned. Constants often use UPPER_SNAKE_CASE. Document units: seconds and milliseconds must not be confused. Suitable types and clear names prevent errors before you add tests.
+
+## Observe and run
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        final int DIAS_SEMANA = 7;
+        double precio = 12.9;
+        System.out.println((int) precio);
+        System.out.println(DIAS_SEMANA);
+    }
+}
+```
+
+## Your mission
+
+Declare a 60-second constant and calculate the seconds in 5 minutes.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

@@ -1,0 +1,23 @@
+El JDK es el kit para desarrollar: incluye herramientas como `javac`, que compila código fuente. La JVM es la máquina virtual que ejecuta bytecode Java. El JRE describe el entorno de ejecución; la distribución y empaquetado modernos varían según el proveedor, y para aprender basta instalar un JDK.
+
+El archivo `Main.java` contiene texto escrito por ti. `javac Main.java` produce `Main.class`. Después, `java Main` busca la clase y ejecuta su método `main`. No escribas `.class` en ese último comando. Compilar y ejecutar son pasos distintos; un programa puede compilar correctamente y fallar durante su ejecución.
+
+![Fuente, compilación y JVM](/images/jvm-flow.svg)
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Fuente -> bytecode -> JVM");
+    }
+}
+```
+
+## Tu misión
+
+Ejecuta el ejemplo y localiza el paso de compilación en el diagrama.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

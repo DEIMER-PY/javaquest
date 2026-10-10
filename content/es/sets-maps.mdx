@@ -1,0 +1,24 @@
+Un Set representa valores únicos; añadir dos veces el mismo valor no crea dos entradas. Un Map relaciona claves con valores: por ejemplo nombre de estudiante y nota. Actualizar una clave reemplaza su valor.
+
+HashSet y HashMap no garantizan un orden de recorrido. Usa implementaciones ordenadas cuando el orden sea parte del requisito. `get` puede devolver null si la clave no existe; consulta `containsKey` o utiliza `getOrDefault`.
+
+## Observa y ejecuta
+
+```java
+import java.util.HashMap;
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String,Integer> notas=new HashMap<>();
+        notas.put("Ada",9);
+        System.out.println(notas.getOrDefault("Ada",0));
+    }
+}
+```
+
+## Tu misión
+
+Guarda dos notas y consulta una clave inexistente con valor predeterminado 0.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

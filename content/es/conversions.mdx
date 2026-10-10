@@ -1,0 +1,24 @@
+Una conversión puede ampliar o reducir un tipo. Asignar `int` a `double` suele ser automático; convertir `double` a `int` requiere un cast y descarta la fracción. Ese cast no redondea. Convertir texto a número es otra operación: se realiza con métodos como `Integer.parseInt`.
+
+Usa `final` para valores que no deben reasignarse. Las constantes suelen escribirse en MAYUSCULAS_CON_GUIONES. Documenta las unidades: una cantidad en segundos no debe confundirse con milisegundos. El tipo correcto y un nombre claro evitan errores incluso antes de añadir pruebas.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        final int DIAS_SEMANA = 7;
+        double precio = 12.9;
+        System.out.println((int) precio);
+        System.out.println(DIAS_SEMANA);
+    }
+}
+```
+
+## Tu misión
+
+Declara una constante de 60 segundos y calcula cuántos segundos hay en 5 minutos.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

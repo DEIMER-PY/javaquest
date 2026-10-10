@@ -1,0 +1,26 @@
+An exception disrupts normal flow. try wraps an operation that may fail; catch handles a specific type. Catch what you can meaningfully handle and do not hide errors with empty blocks.
+
+finally performs cleanup even after exceptions. For AutoCloseable resources, you will study try-with-resources. Exceptions do not replace ordinary validation: check arguments first when possible.
+
+## Observe and run
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int n=Integer.parseInt("abc");
+            System.out.println(n);
+        } catch(NumberFormatException e) {
+            System.out.println("Escribe un número válido");
+        }
+    }
+}
+```
+
+## Your mission
+
+Replace abc with 42 and observe that catch does not run.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

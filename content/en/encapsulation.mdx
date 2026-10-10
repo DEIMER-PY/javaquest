@@ -1,0 +1,24 @@
+Encapsulation controls internal details. Declare fields private and expose operations preserving rules. Adding setters to everything is not enough: decide which changes should be allowed.
+
+An account must reject negative deposits. A deposit method validates the amount before changing balance. Getters expose state without direct mutation.
+
+## Observe and run
+
+```java
+class Cuenta {
+    private int saldo;
+    void depositar(int monto) { if(monto<=0) throw new IllegalArgumentException("Monto inválido"); saldo+=monto; }
+    int getSaldo() { return saldo; }
+}
+public class Main {
+    public static void main(String[] args) { Cuenta c=new Cuenta(); c.depositar(10); System.out.println(c.getSaldo()); }
+}
+```
+
+## Your mission
+
+Deposit 10 then 15; check the balance is 25.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

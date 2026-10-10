@@ -1,0 +1,23 @@
+Syntax errors prevent compilation. Exceptions interrupt execution. Logic errors yield incorrect results without necessarily reporting anything. Learn to distinguish them.
+
+Reduce the example, record input and expected output, and inspect intermediate values with println. Read the first compiler error. In a local IDE, breakpoints let you inspect execution step by step.
+
+## Observe and run
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int a=5, b=2;
+        System.out.println("a=" + a + ", b=" + b);
+        System.out.println((double) a / b);
+    }
+}
+```
+
+## Your mission
+
+Fix the integer average of 5 and 2 to get 3.5.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

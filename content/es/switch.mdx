@@ -1,0 +1,26 @@
+`switch` elige entre valores concretos, por ejemplo opciones de un menú. En la sintaxis tradicional, `break` evita continuar en el siguiente caso. `default` maneja valores no enumerados.
+
+Java moderno también ofrece expresiones switch, pero aquí comenzamos con la forma tradicional para que distingas selección y repetición. Usa `if` cuando la decisión depende de rangos o condiciones complejas.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int opcion = 1;
+        switch (opcion) {
+            case 1: System.out.println("Aprender"); break;
+            case 2: System.out.println("Practicar"); break;
+            default: System.out.println("Opción inválida");
+        }
+    }
+}
+```
+
+## Tu misión
+
+Añade una opción 3 para mostrar Proyectos.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

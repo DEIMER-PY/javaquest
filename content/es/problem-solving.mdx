@@ -1,0 +1,25 @@
+Antes de escribir código, define entradas, salidas y reglas. Divide una aplicación en tareas pequeñas. Para una calculadora: elegir operación, validar datos, calcular y mostrar el resultado.
+
+Escribe ejemplos a mano y considera cero, negativos y límites. Los métodos ayudan a separar responsabilidades. Una solución clara con casos comprobados vale más que una solución corta que no entiendes. Aplica estas ideas en el proyecto Calculadora.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    static double promedio(int[] ns) {
+        if(ns.length==0) throw new IllegalArgumentException("Array vacío");
+        int total=0;
+        for(int n:ns) total+=n;
+        return (double)total/ns.length;
+    }
+    public static void main(String[] args) { System.out.println(promedio(new int[]{7,8,9})); }
+}
+```
+
+## Tu misión
+
+Crea un método que devuelva el máximo de un array no vacío.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

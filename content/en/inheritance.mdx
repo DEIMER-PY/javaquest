@@ -1,0 +1,21 @@
+Inheritance models an is-a relationship: a Dog is an Animal. `extends` derives a class; `@Override` identifies an overridden method. Java classes extend one class.
+
+Polymorphism allows an Animal reference to hold a Dog object. Calls use the object's implementation. Do not inherit just to save lines: for has-a relationships, composition is often more appropriate.
+
+## Observe and run
+
+```java
+class Animal { String sonido() { return "..."; } }
+class Perro extends Animal { @Override String sonido() { return "Guau"; } }
+public class Main {
+    public static void main(String[] args) { Animal a=new Perro(); System.out.println(a.sonido()); }
+}
+```
+
+## Your mission
+
+Create Cat overriding sound to return Meow.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

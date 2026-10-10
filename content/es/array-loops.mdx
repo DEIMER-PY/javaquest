@@ -1,0 +1,24 @@
+Puedes recorrer un array con for y un índice o con for-each y su valor. Para calcular un total, inicializa un acumulador fuera del ciclo y actualízalo dentro.
+
+La búsqueda lineal compara cada elemento hasta encontrar el objetivo. Usa una bandera o un índice inicial -1 para representar «no encontrado». Prueba una búsqueda exitosa y otra fallida antes de confiar en el algoritmo.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[] numeros={3,6,9};
+        int total=0;
+        for(int n:numeros) total+=n;
+        System.out.println(total);
+    }
+}
+```
+
+## Tu misión
+
+Cuenta cuántos números mayores que 5 hay en {2,6,8,1}.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

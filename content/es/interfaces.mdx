@@ -1,0 +1,21 @@
+Una interfaz define un contrato. Una clase usa `implements` para cumplirlo. Los métodos de este ejemplo son públicos y la implementación debe respetar esa visibilidad.
+
+Una clase puede implementar varias interfaces. Programar contra contratos ayuda a sustituir implementaciones y escribir pruebas. Una interfaz no debe convertirse en una lista enorme de capacidades que sus implementaciones no necesitan.
+
+## Observa y ejecuta
+
+```java
+interface Saludable { String saludar(); }
+class Persona implements Saludable { public String saludar() { return "Hola"; } }
+public class Main {
+    public static void main(String[] args) { Saludable p=new Persona(); System.out.println(p.saludar()); }
+}
+```
+
+## Tu misión
+
+Crea Robot que implemente Saludable y devuelva Hola, humano.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

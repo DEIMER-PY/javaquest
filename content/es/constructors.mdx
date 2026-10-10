@@ -1,0 +1,23 @@
+Un constructor inicializa un objeto. Tiene el nombre de la clase y no declara tipo de retorno. Si declaras un constructor, Java no añade automáticamente el constructor vacío.
+
+`this` se refiere a la instancia actual. En `this.nombre = nombre`, la izquierda es el atributo y la derecha el parámetro. Valida los datos al crear el objeto para evitar estados inválidos desde el principio.
+
+## Observa y ejecuta
+
+```java
+class Persona {
+    String nombre;
+    Persona(String nombre) { this.nombre=nombre; }
+}
+public class Main {
+    public static void main(String[] args) { System.out.println(new Persona("Ada").nombre); }
+}
+```
+
+## Tu misión
+
+Añade una edad al constructor Persona y muéstrala.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

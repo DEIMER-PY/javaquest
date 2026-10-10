@@ -1,0 +1,23 @@
+Un array almacena una cantidad fija de elementos del mismo tipo. `int[] notas = {7,8,9};` tiene tres elementos: índices 0, 1 y 2. Su propiedad `length` indica el tamaño y no lleva paréntesis.
+
+Leer `notas[3]` provoca una excepción. Un array vacío es válido; no tiene primer elemento. Antes de usar un índice, comprueba que esté entre cero y length menos uno.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[] notas={7,8,9};
+        System.out.println(notas[0]);
+        System.out.println(notas.length);
+    }
+}
+```
+
+## Tu misión
+
+Crea un array de tres nombres e imprime el último.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

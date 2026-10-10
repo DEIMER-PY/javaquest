@@ -1,0 +1,20 @@
+A method names a task. It can receive parameters and return a value. Give it a clear responsibility: calculating an average differs from displaying a menu.
+
+`static` lets main call this method without creating an object. Later you will use instance methods. Extract repeated logic to make it easier to understand and verify.
+
+## Observe and run
+
+```java
+public class Main {
+    static void saludar() { System.out.println("Hola"); }
+    public static void main(String[] args) { saludar(); }
+}
+```
+
+## Your mission
+
+Create a goodbye method that prints See you.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

@@ -1,0 +1,26 @@
+Combine objects, lists, and validation in an in-memory task manager. Each task has a title and state; a service adds tasks, completes them, and presents results. Persistence arrives in a later path.
+
+Start with predefined data, then add a Scanner menu locally. Check empty lists, empty titles, and invalid selections. Memory storage does not survive process termination; a database addresses that separate requirement.
+
+## Observe and run
+
+```java
+import java.util.ArrayList;
+class Tarea { String titulo; boolean completa; Tarea(String t) { titulo=t; } }
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Tarea> ts=new ArrayList<>();
+        ts.add(new Tarea("Aprender Java"));
+        ts.get(0).completa=true;
+        for(Tarea t:ts) System.out.println(t.titulo + ": " + t.completa);
+    }
+}
+```
+
+## Your mission
+
+Add a second pending task and print both states. Continue with the guided project.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

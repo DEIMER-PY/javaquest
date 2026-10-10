@@ -1,0 +1,23 @@
+The JDK is the development kit: it includes tools such as `javac`, which compiles source code. The JVM runs Java bytecode. JRE describes the runtime environment; modern packaging varies by vendor, and installing a JDK is enough for this course.
+
+`Main.java` contains your source text. `javac Main.java` produces `Main.class`. Then `java Main` finds the class and executes its `main` method. Do not add `.class` to that command. Compilation and execution are separate: a program can compile successfully and still fail at runtime.
+
+![Fuente, compilación y JVM](/images/jvm-flow.svg)
+
+## Observe and run
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Fuente -> bytecode -> JVM");
+    }
+}
+```
+
+## Your mission
+
+Run the example and identify compilation in the diagram.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

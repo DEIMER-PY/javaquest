@@ -1,0 +1,26 @@
+Una excepción representa una situación que rompe el flujo normal. `try` contiene una operación que puede fallar; `catch` maneja un tipo concreto. Captura lo que sabes resolver y no ocultes errores con bloques vacíos.
+
+`finally` ejecuta limpieza incluso si hay una excepción. Para recursos que implementan AutoCloseable, estudiarás try-with-resources. Las excepciones no sustituyen validaciones normales: comprueba argumentos antes de operar cuando sea posible.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int n=Integer.parseInt("abc");
+            System.out.println(n);
+        } catch(NumberFormatException e) {
+            System.out.println("Escribe un número válido");
+        }
+    }
+}
+```
+
+## Tu misión
+
+Cambia abc por 42 y observa que catch no se ejecuta.
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

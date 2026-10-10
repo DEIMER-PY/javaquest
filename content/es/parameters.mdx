@@ -1,0 +1,20 @@
+Un parámetro es la variable declarada en la firma; un argumento es el valor enviado al llamar. `int sumar(int a, int b)` recibe dos enteros y promete devolver uno con `return`.
+
+Si el tipo de retorno es `void`, el método no devuelve un valor. Java pasa argumentos por valor: en objetos, ese valor es una referencia. Esto permite modificar el objeto recibido, pero reasignar el parámetro no cambia la variable del llamador.
+
+## Observa y ejecuta
+
+```java
+public class Main {
+    static int sumar(int a,int b) { return a+b; }
+    public static void main(String[] args) { System.out.println(sumar(3,4)); }
+}
+```
+
+## Tu misión
+
+Crea un método cuadrado(int n) y prueba cuadrado(5).
+
+## Antes de continuar
+
+Predice la salida antes de ejecutar. Luego cambia un valor, explica el resultado y compara con tu predicción. Si aparece un error, identifica su línea y corrige primero la causa inicial.

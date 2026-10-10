@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "java-story",
+    "unit": 1,
+    "title": {
+      "es": "¿Por qué Java?",
+      "en": "Why Java?"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Mi primera aventura Java\");\n    }\n}",
+    "exercise": {
+      "es": "Imprime tu nombre y una razón para aprender Java en dos líneas.",
+      "en": "Print your name and one reason for learning Java on two lines."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Ada\");\n        System.out.println(\"Quiero construir APIs\");\n    }\n}",
+    "question": {
+      "es": "¿Quién lideró el diseño original de Java?",
+      "en": "Who led Java's original design?"
+    },
+    "choices": [
+      {
+        "es": "James Gosling",
+        "en": "James Gosling"
+      },
+      {
+        "es": "Brendan Eich",
+        "en": "Brendan Eich"
+      },
+      {
+        "es": "Guido van Rossum",
+        "en": "Guido van Rossum"
+      }
+    ]
+  },
+  {
+    "id": "jdk-jvm",
+    "unit": 1,
+    "title": {
+      "es": "JDK, JVM y bytecode",
+      "en": "JDK, JVM, and bytecode"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Fuente -> bytecode -> JVM\");\n    }\n}",
+    "exercise": {
+      "es": "Ejecuta el ejemplo y localiza el paso de compilación en el diagrama.",
+      "en": "Run the example and identify compilation in the diagram."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"javac compila; java ejecuta\");\n    }\n}",
+    "question": {
+      "es": "¿Qué herramienta compila un archivo .java?",
+      "en": "Which tool compiles a .java file?"
+    },
+    "choices": [
+      {
+        "es": "git",
+        "en": "git"
+      },
+      {
+        "es": "mysql",
+        "en": "mysql"
+      },
+      {
+        "es": "javac",
+        "en": "javac"
+      }
+    ]
+  },
+  {
+    "id": "installation",
+    "unit": 1,
+    "title": {
+      "es": "Prepara tu computadora",
+      "en": "Set up your computer"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Listo para aprender\");\n    }\n}",
+    "exercise": {
+      "es": "Verifica ambas versiones en tu terminal. Después ejecuta el ejemplo.",
+      "en": "Check both versions in your terminal, then run the example."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"JDK instalado y verificado\");\n    }\n}",
+    "question": {
+      "es": "¿Qué debes verificar para poder compilar localmente?",
+      "en": "What must you verify to compile locally?"
+    },
+    "choices": [
+      {
+        "es": "Instalar MySQL primero",
+        "en": "Installing MySQL first"
+      },
+      {
+        "es": "Que javac esté disponible",
+        "en": "That javac is available"
+      },
+      {
+        "es": "Solo tener un navegador",
+        "en": "Only having a browser"
+      }
+    ]
+  },
+  {
+    "id": "hello-world",
+    "unit": 1,
+    "title": {
+      "es": "Tu primer Hola, mundo",
+      "en": "Your first Hello, world"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hola, mundo\");\n    }\n}",
+    "exercise": {
+      "es": "Imprime Hola, clase y luego Estoy aprendiendo Java.",
+      "en": "Print Hello, class followed by I am learning Java."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hola, clase\");\n        System.out.println(\"Estoy aprendiendo Java\");\n    }\n}",
+    "question": {
+      "es": "¿Qué hace println al final del texto?",
+      "en": "What does println add after the text?"
+    },
+    "choices": [
+      {
+        "es": "Un salto de línea",
+        "en": "A newline"
+      },
+      {
+        "es": "Una variable",
+        "en": "A variable"
+      },
+      {
+        "es": "Un archivo",
+        "en": "A file"
+      }
+    ]
+  },
+  {
+    "id": "java-platforms",
+    "unit": 1,
+    "title": {
+      "es": "Java, C# y sus caminos",
+      "en": "Java, C#, and their paths"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        String ruta = \"Backend\";\n        System.out.println(\"Mi ruta: \" + ruta);\n    }\n}",
+    "exercise": {
+      "es": "Cambia la ruta por una que te interese y explica qué construirías.",
+      "en": "Change the path to one that interests you and explain what you would build."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        String ruta = \"Backend\";\n        System.out.println(ruta + \": una API de biblioteca\");\n    }\n}",
+    "question": {
+      "es": "¿Qué entorno está asociado principalmente con C#?",
+      "en": "Which environment is primarily associated with C#?"
+    },
+    "choices": [
+      {
+        "es": "JVM",
+        "en": "JVM"
+      },
+      {
+        "es": "JDK",
+        "en": "JDK"
+      },
+      {
+        "es": ".NET",
+        "en": ".NET"
+      }
+    ]
+  },
+  {
+    "id": "variables",
+    "unit": 2,
+    "title": {
+      "es": "Variables y tipos",
+      "en": "Variables and types"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        int edad = 20;\n        boolean estudiante = true;\n        System.out.println(edad + \" / \" + estudiante);\n    }\n}",
+    "exercise": {
+      "es": "Declara una edad y una meta como texto; imprime ambas.",
+      "en": "Declare an age and a text goal; print both."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int edad = 19;\n        String meta = \"Crear proyectos\";\n        System.out.println(edad + \": \" + meta);\n    }\n}",
+    "question": {
+      "es": "¿Qué tipo representa true o false?",
+      "en": "Which type represents true or false?"
+    },
+    "choices": [
+      {
+        "es": "char",
+        "en": "char"
+      },
+      {
+        "es": "boolean",
+        "en": "boolean"
+      },
+      {
+        "es": "int",
+        "en": "int"
+      }
+    ]
+  },
+  {
+    "id": "operators",
+    "unit": 2,
+    "title": {
+      "es": "Operadores y números",
+      "en": "Operators and numbers"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(5 / 2);\n        System.out.println(5.0 / 2);\n        System.out.println(8 % 2);\n    }\n}",
+    "exercise": {
+      "es": "Calcula el promedio decimal de 7, 8 y 10.",
+      "en": "Calculate the decimal average of 7, 8, and 10."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        double promedio = (7 + 8 + 10) / 3.0;\n        System.out.println(promedio);\n    }\n}",
+    "question": {
+      "es": "¿Cuál es el resultado de 5 / 2 con enteros?",
+      "en": "What is the result of integer 5 / 2?"
+    },
+    "choices": [
+      {
+        "es": "2",
+        "en": "2"
+      },
+      {
+        "es": "2.5",
+        "en": "2.5"
+      },
+      {
+        "es": "3",
+        "en": "3"
+      }
+    ]
+  },
+  {
+    "id": "strings",
+    "unit": 2,
+    "title": {
+      "es": "Trabaja con texto",
+      "en": "Working with text"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        String nombre = \"Java\";\n        System.out.println(nombre.toUpperCase());\n        System.out.println(nombre.equals(\"Java\"));\n    }\n}",
+    "exercise": {
+      "es": "Imprime la longitud de tu nombre y una versión en mayúsculas.",
+      "en": "Print your name's length and an uppercase version."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        String nombre = \"Ada\";\n        System.out.println(nombre.length());\n        System.out.println(nombre.toUpperCase());\n    }\n}",
+    "question": {
+      "es": "¿Qué método compara el contenido de dos String?",
+      "en": "Which method compares two strings' contents?"
+    },
+    "choices": [
+      {
+        "es": "==",
+        "en": "=="
+      },
+      {
+        "es": "length",
+        "en": "length"
+      },
+      {
+        "es": "equals",
+        "en": "equals"
+      }
+    ]
+  },
+  {
+    "id": "input-output",
+    "unit": 2,
+    "title": {
+      "es": "Entrada y salida",
+      "en": "Input and output"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        String entrada = \"21\";\n        int edad = Integer.parseInt(entrada);\n        System.out.println(\"El próximo año: \" + (edad + 1));\n    }\n}",
+    "exercise": {
+      "es": "Convierte el texto 12 a entero e imprime su doble. Prueba Scanner en tu equipo siguiendo la guía.",
+      "en": "Convert the text 12 to an integer and print twice its value. Try Scanner locally using the guide."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int numero = Integer.parseInt(\"12\");\n        System.out.println(numero * 2);\n    }\n}",
+    "question": {
+      "es": "¿Dónde ejecutamos los ejemplos con Scanner en esta ruta?",
+      "en": "Where do we run Scanner examples in this path?"
+    },
+    "choices": [
+      {
+        "es": "En MySQL",
+        "en": "In MySQL"
+      },
+      {
+        "es": "En el JDK local",
+        "en": "With the local JDK"
+      },
+      {
+        "es": "Siempre en el playground",
+        "en": "Always in the playground"
+      }
+    ]
+  },
+  {
+    "id": "conversions",
+    "unit": 2,
+    "title": {
+      "es": "Conversiones y constantes",
+      "en": "Conversions and constants"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        final int DIAS_SEMANA = 7;\n        double precio = 12.9;\n        System.out.println((int) precio);\n        System.out.println(DIAS_SEMANA);\n    }\n}",
+    "exercise": {
+      "es": "Declara una constante de 60 segundos y calcula cuántos segundos hay en 5 minutos.",
+      "en": "Declare a 60-second constant and calculate the seconds in 5 minutes."
+    },
+    "hint": {
+      "es": "Compara el ejemplo con el objetivo. Cambia una cosa a la vez y comprueba la salida.",
+      "en": "Compare the example with the goal. Change one thing at a time and check the output."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        final int SEGUNDOS_MINUTO = 60;\n        System.out.println(5 * SEGUNDOS_MINUTO);\n    }\n}",
+    "question": {
+      "es": "¿Qué produce (int) 12.9?",
+      "en": "What does (int) 12.9 produce?"
+    },
+    "choices": [
+      {
+        "es": "12",
+        "en": "12"
+      },
+      {
+        "es": "13",
+        "en": "13"
+      },
+      {
+        "es": "12.9",
+        "en": "12.9"
+      }
+    ]
+  },
+  {
+    "id": "conditions",
+    "unit": 3,
+    "title": {
+      "es": "Decisiones con if",
+      "en": "Decisions with if"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        int edad = 18;\n        if (edad >= 18) {\n            System.out.println(\"Mayor de edad\");\n        } else {\n            System.out.println(\"Menor de edad\");\n        }\n    }\n}",
+    "exercise": {
+      "es": "Indica si un número es par con % y if.",
+      "en": "Use % and if to report whether a number is even."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int n = 12;\n        if (n % 2 == 0) System.out.println(\"Par\");\n        else System.out.println(\"Impar\");\n    }\n}",
+    "question": {
+      "es": "¿Qué operador exige que ambas condiciones sean verdaderas?",
+      "en": "Which operator requires both conditions to be true?"
+    },
+    "choices": [
+      {
+        "es": "||",
+        "en": "||"
+      },
+      {
+        "es": "=",
+        "en": "="
+      },
+      {
+        "es": "&&",
+        "en": "&&"
+      }
+    ]
+  },
+  {
+    "id": "switch",
+    "unit": 3,
+    "title": {
+      "es": "Varias opciones con switch",
+      "en": "Multiple choices with switch"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        int opcion = 1;\n        switch (opcion) {\n            case 1: System.out.println(\"Aprender\"); break;\n            case 2: System.out.println(\"Practicar\"); break;\n            default: System.out.println(\"Opción inválida\");\n        }\n    }\n}",
+    "exercise": {
+      "es": "Añade una opción 3 para mostrar Proyectos.",
+      "en": "Add option 3 to show Projects."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int opcion=3;\n        switch(opcion) {\n        case 1: System.out.println(\"Aprender\"); break;\n        case 2: System.out.println(\"Practicar\"); break;\n        case 3: System.out.println(\"Proyectos\"); break;\n        default: System.out.println(\"Inválida\");\n        }\n    }\n}",
+    "question": {
+      "es": "¿Qué hace default?",
+      "en": "What does default do?"
+    },
+    "choices": [
+      {
+        "es": "Detiene la JVM",
+        "en": "Stops the JVM"
+      },
+      {
+        "es": "Maneja valores sin un caso específico",
+        "en": "Handles values without a specific case"
+      },
+      {
+        "es": "Repite el menú",
+        "en": "Repeats the menu"
+      }
+    ]
+  },
+  {
+    "id": "while",
+    "unit": 3,
+    "title": {
+      "es": "Repite con while",
+      "en": "Repeat with while"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        int cuenta = 1;\n        while (cuenta <= 3) {\n            System.out.println(cuenta);\n            cuenta++;\n        }\n    }\n}",
+    "exercise": {
+      "es": "Imprime una cuenta regresiva desde 5 hasta 1.",
+      "en": "Print a countdown from 5 to 1."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int n=5;\n        while(n>=1) { System.out.println(n); n--; }\n    }\n}",
+    "question": {
+      "es": "¿Cuántas veces se ejecuta while si su condición inicial es falsa?",
+      "en": "How often does while run if its initial condition is false?"
+    },
+    "choices": [
+      {
+        "es": "Cero",
+        "en": "Zero"
+      },
+      {
+        "es": "Una",
+        "en": "Once"
+      },
+      {
+        "es": "Infinitas",
+        "en": "Infinitely"
+      }
+    ]
+  },
+  {
+    "id": "for",
+    "unit": 3,
+    "title": {
+      "es": "Ciclos con for",
+      "en": "Loops with for"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        for (int i=1; i<=5; i++) {\n            System.out.println(i * 2);\n        }\n    }\n}",
+    "exercise": {
+      "es": "Suma los números del 1 al 10 con un for.",
+      "en": "Sum the numbers from 1 to 10 with for."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int total=0;\n        for(int i=1;i<=10;i++) total+=i;\n        System.out.println(total);\n    }\n}",
+    "question": {
+      "es": "¿Cuál es el resultado de sumar del 1 al 10?",
+      "en": "What is the sum from 1 to 10?"
+    },
+    "choices": [
+      {
+        "es": "10",
+        "en": "10"
+      },
+      {
+        "es": "100",
+        "en": "100"
+      },
+      {
+        "es": "55",
+        "en": "55"
+      }
+    ]
+  },
+  {
+    "id": "debugging",
+    "unit": 3,
+    "title": {
+      "es": "Aprende a encontrar errores",
+      "en": "Learn to find bugs"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        int a=5, b=2;\n        System.out.println(\"a=\" + a + \", b=\" + b);\n        System.out.println((double) a / b);\n    }\n}",
+    "exercise": {
+      "es": "Corrige el promedio entero de 5 y 2 para obtener 3.5.",
+      "en": "Fix the integer average of 5 and 2 to get 3.5."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int a=5,b=2;\n        System.out.println((a+b)/2.0);\n    }\n}",
+    "question": {
+      "es": "¿Qué error puede dar una respuesta equivocada aunque compile?",
+      "en": "Which error can produce a wrong answer despite compiling?"
+    },
+    "choices": [
+      {
+        "es": "Clase sin cerrar",
+        "en": "Unclosed class"
+      },
+      {
+        "es": "Error lógico",
+        "en": "Logic error"
+      },
+      {
+        "es": "Falta de punto y coma",
+        "en": "Missing semicolon"
+      }
+    ]
+  },
+  {
+    "id": "methods",
+    "unit": 4,
+    "title": {
+      "es": "Métodos que hacen una cosa",
+      "en": "Methods that do one thing"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    static void saludar() { System.out.println(\"Hola\"); }\n    public static void main(String[] args) { saludar(); }\n}",
+    "exercise": {
+      "es": "Crea un método despedir que imprima Hasta luego.",
+      "en": "Create a goodbye method that prints See you."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    static void despedir() { System.out.println(\"Hasta luego\"); }\n    public static void main(String[] args) { despedir(); }\n}",
+    "question": {
+      "es": "¿Para qué extraemos un método?",
+      "en": "Why extract a method?"
+    },
+    "choices": [
+      {
+        "es": "Para organizar y reutilizar una tarea",
+        "en": "To organize and reuse a task"
+      },
+      {
+        "es": "Para instalar Java",
+        "en": "To install Java"
+      },
+      {
+        "es": "Para eliminar los tipos",
+        "en": "To eliminate types"
+      }
+    ]
+  },
+  {
+    "id": "parameters",
+    "unit": 4,
+    "title": {
+      "es": "Parámetros y retorno",
+      "en": "Parameters and return values"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    static int sumar(int a,int b) { return a+b; }\n    public static void main(String[] args) { System.out.println(sumar(3,4)); }\n}",
+    "exercise": {
+      "es": "Crea un método cuadrado(int n) y prueba cuadrado(5).",
+      "en": "Create square(int n) and test square(5)."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    static int cuadrado(int n) { return n*n; }\n    public static void main(String[] args) { System.out.println(cuadrado(5)); }\n}",
+    "question": {
+      "es": "¿Qué indica void?",
+      "en": "What does void mean?"
+    },
+    "choices": [
+      {
+        "es": "Devuelve cero",
+        "en": "It returns zero"
+      },
+      {
+        "es": "No puede recibir parámetros",
+        "en": "It cannot take parameters"
+      },
+      {
+        "es": "El método no devuelve un valor",
+        "en": "The method returns no value"
+      }
+    ]
+  },
+  {
+    "id": "arrays",
+    "unit": 4,
+    "title": {
+      "es": "Arrays e índices",
+      "en": "Arrays and indexes"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        int[] notas={7,8,9};\n        System.out.println(notas[0]);\n        System.out.println(notas.length);\n    }\n}",
+    "exercise": {
+      "es": "Crea un array de tres nombres e imprime el último.",
+      "en": "Create an array of three names and print the last."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        String[] nombres={\"Ada\",\"Linus\",\"Grace\"};\n        System.out.println(nombres[nombres.length-1]);\n    }\n}",
+    "question": {
+      "es": "¿Cuál es el primer índice de un array?",
+      "en": "What is an array's first index?"
+    },
+    "choices": [
+      {
+        "es": "-1",
+        "en": "-1"
+      },
+      {
+        "es": "0",
+        "en": "0"
+      },
+      {
+        "es": "1",
+        "en": "1"
+      }
+    ]
+  },
+  {
+    "id": "array-loops",
+    "unit": 4,
+    "title": {
+      "es": "Recorre y busca en arrays",
+      "en": "Traverse and search arrays"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        int[] numeros={3,6,9};\n        int total=0;\n        for(int n:numeros) total+=n;\n        System.out.println(total);\n    }\n}",
+    "exercise": {
+      "es": "Cuenta cuántos números mayores que 5 hay en {2,6,8,1}.",
+      "en": "Count values greater than 5 in {2,6,8,1}."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        int[] ns={2,6,8,1};\n        int cantidad=0;\n        for(int n:ns) if(n>5) cantidad++;\n        System.out.println(cantidad);\n    }\n}",
+    "question": {
+      "es": "¿Dónde debe inicializarse el acumulador del total?",
+      "en": "Where should the total accumulator be initialized?"
+    },
+    "choices": [
+      {
+        "es": "Antes del ciclo",
+        "en": "Before the loop"
+      },
+      {
+        "es": "En cada vuelta",
+        "en": "On every iteration"
+      },
+      {
+        "es": "Después de imprimir",
+        "en": "After printing"
+      }
+    ]
+  },
+  {
+    "id": "problem-solving",
+    "unit": 4,
+    "title": {
+      "es": "Divide un problema",
+      "en": "Break down a problem"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    static double promedio(int[] ns) {\n        if(ns.length==0) throw new IllegalArgumentException(\"Array vacío\");\n        int total=0;\n        for(int n:ns) total+=n;\n        return (double)total/ns.length;\n    }\n    public static void main(String[] args) { System.out.println(promedio(new int[]{7,8,9})); }\n}",
+    "exercise": {
+      "es": "Crea un método que devuelva el máximo de un array no vacío.",
+      "en": "Create a method returning the maximum in a nonempty array."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    static int maximo(int[] ns) {\n        if(ns.length==0) throw new IllegalArgumentException(\"Array vacío\");\n        int max=ns[0];\n        for(int n:ns) if(n>max) max=n;\n        return max;\n    }\n    public static void main(String[] args) { System.out.println(maximo(new int[]{-5,-2,-9})); }\n}",
+    "question": {
+      "es": "¿Por qué el máximo inicial debe ser el primer elemento, no siempre cero?",
+      "en": "Why start the maximum with the first value instead of always zero?"
+    },
+    "choices": [
+      {
+        "es": "Porque Java no acepta cero",
+        "en": "Java does not accept zero"
+      },
+      {
+        "es": "Porque arrays empiezan en uno",
+        "en": "Arrays start at one"
+      },
+      {
+        "es": "Porque todos los valores podrían ser negativos",
+        "en": "All values could be negative"
+      }
+    ]
+  },
+  {
+    "id": "classes",
+    "unit": 5,
+    "title": {
+      "es": "Clases y objetos",
+      "en": "Classes and objects"
+    },
+    "minutes": 8,
+    "example": "class Libro { String titulo=\"Java\"; }\npublic class Main {\n    public static void main(String[] args) {\n        Libro libro=new Libro();\n        System.out.println(libro.titulo);\n    }\n}",
+    "exercise": {
+      "es": "Crea una clase Mascota con nombre e imprime el nombre de una instancia.",
+      "en": "Create a Pet class with a name and print an instance's name."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "class Mascota { String nombre=\"Byte\"; }\npublic class Main {\n    public static void main(String[] args) { System.out.println(new Mascota().nombre); }\n}",
+    "question": {
+      "es": "¿Qué es un objeto?",
+      "en": "What is an object?"
+    },
+    "choices": [
+      {
+        "es": "Un operador",
+        "en": "An operator"
+      },
+      {
+        "es": "Una instancia de una clase",
+        "en": "An instance of a class"
+      },
+      {
+        "es": "Un archivo SQL",
+        "en": "A SQL file"
+      }
+    ]
+  },
+  {
+    "id": "constructors",
+    "unit": 5,
+    "title": {
+      "es": "Constructores y this",
+      "en": "Constructors and this"
+    },
+    "minutes": 8,
+    "example": "class Persona {\n    String nombre;\n    Persona(String nombre) { this.nombre=nombre; }\n}\npublic class Main {\n    public static void main(String[] args) { System.out.println(new Persona(\"Ada\").nombre); }\n}",
+    "exercise": {
+      "es": "Añade una edad al constructor Persona y muéstrala.",
+      "en": "Add age to the Person constructor and display it."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "class Persona {\n    String nombre; int edad;\n    Persona(String nombre,int edad) { this.nombre=nombre; this.edad=edad; }\n}\npublic class Main {\n    public static void main(String[] args) { System.out.println(new Persona(\"Ada\",20).edad); }\n}",
+    "question": {
+      "es": "¿Qué tipo de retorno tiene un constructor?",
+      "en": "What return type does a constructor declare?"
+    },
+    "choices": [
+      {
+        "es": "Ninguno",
+        "en": "None"
+      },
+      {
+        "es": "void",
+        "en": "void"
+      },
+      {
+        "es": "String",
+        "en": "String"
+      }
+    ]
+  },
+  {
+    "id": "encapsulation",
+    "unit": 5,
+    "title": {
+      "es": "Encapsula y valida",
+      "en": "Encapsulate and validate"
+    },
+    "minutes": 8,
+    "example": "class Cuenta {\n    private int saldo;\n    void depositar(int monto) { if(monto<=0) throw new IllegalArgumentException(\"Monto inválido\"); saldo+=monto; }\n    int getSaldo() { return saldo; }\n}\npublic class Main {\n    public static void main(String[] args) { Cuenta c=new Cuenta(); c.depositar(10); System.out.println(c.getSaldo()); }\n}",
+    "exercise": {
+      "es": "Deposita 10 y luego 15. Comprueba que el saldo sea 25.",
+      "en": "Deposit 10 then 15; check the balance is 25."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "class Cuenta {\n    private int saldo;\n    void depositar(int n) { if(n<=0) throw new IllegalArgumentException(); saldo+=n; }\n    int getSaldo() { return saldo; }\n}\npublic class Main {\n    public static void main(String[] args) { Cuenta c=new Cuenta(); c.depositar(10); c.depositar(15); System.out.println(c.getSaldo()); }\n}",
+    "question": {
+      "es": "¿Qué modificador restringe un atributo a su clase?",
+      "en": "Which modifier restricts a field to its class?"
+    },
+    "choices": [
+      {
+        "es": "public",
+        "en": "public"
+      },
+      {
+        "es": "static",
+        "en": "static"
+      },
+      {
+        "es": "private",
+        "en": "private"
+      }
+    ]
+  },
+  {
+    "id": "inheritance",
+    "unit": 5,
+    "title": {
+      "es": "Herencia y polimorfismo",
+      "en": "Inheritance and polymorphism"
+    },
+    "minutes": 8,
+    "example": "class Animal { String sonido() { return \"...\"; } }\nclass Perro extends Animal { @Override String sonido() { return \"Guau\"; } }\npublic class Main {\n    public static void main(String[] args) { Animal a=new Perro(); System.out.println(a.sonido()); }\n}",
+    "exercise": {
+      "es": "Crea Gato que sobrescriba sonido para devolver Miau.",
+      "en": "Create Cat overriding sound to return Meow."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "class Animal { String sonido() { return \"...\"; } }\nclass Gato extends Animal { @Override String sonido() { return \"Miau\"; } }\npublic class Main {\n    public static void main(String[] args) { Animal a=new Gato(); System.out.println(a.sonido()); }\n}",
+    "question": {
+      "es": "¿Qué determina el método sobrescrito ejecutado?",
+      "en": "What determines which overridden method runs?"
+    },
+    "choices": [
+      {
+        "es": "El orden alfabético",
+        "en": "Alphabetical order"
+      },
+      {
+        "es": "El tipo real del objeto",
+        "en": "The object's actual type"
+      },
+      {
+        "es": "El nombre del archivo",
+        "en": "The file name"
+      }
+    ]
+  },
+  {
+    "id": "interfaces",
+    "unit": 5,
+    "title": {
+      "es": "Interfaces y contratos",
+      "en": "Interfaces and contracts"
+    },
+    "minutes": 8,
+    "example": "interface Saludable { String saludar(); }\nclass Persona implements Saludable { public String saludar() { return \"Hola\"; } }\npublic class Main {\n    public static void main(String[] args) { Saludable p=new Persona(); System.out.println(p.saludar()); }\n}",
+    "exercise": {
+      "es": "Crea Robot que implemente Saludable y devuelva Hola, humano.",
+      "en": "Create Robot implementing the contract and returning Hello, human."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "interface Saludable { String saludar(); }\nclass Robot implements Saludable { public String saludar() { return \"Hola, humano\"; } }\npublic class Main {\n    public static void main(String[] args) { System.out.println(new Robot().saludar()); }\n}",
+    "question": {
+      "es": "¿Qué palabra permite cumplir una interfaz?",
+      "en": "Which keyword fulfills an interface?"
+    },
+    "choices": [
+      {
+        "es": "implements",
+        "en": "implements"
+      },
+      {
+        "es": "extends en todos los casos",
+        "en": "extends in all cases"
+      },
+      {
+        "es": "import",
+        "en": "import"
+      }
+    ]
+  },
+  {
+    "id": "lists",
+    "unit": 6,
+    "title": {
+      "es": "Listas con ArrayList",
+      "en": "Lists with ArrayList"
+    },
+    "minutes": 8,
+    "example": "import java.util.List;\nimport java.util.ArrayList;\npublic class Main {\n    public static void main(String[] args) {\n        List<String> tareas=new ArrayList<>();\n        tareas.add(\"Aprender Java\");\n        System.out.println(tareas.get(0));\n    }\n}",
+    "exercise": {
+      "es": "Añade dos tareas y muestra el tamaño de la lista.",
+      "en": "Add two tasks and show the list size."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "import java.util.ArrayList;\npublic class Main {\n    public static void main(String[] args) { ArrayList<String> ts=new ArrayList<>(); ts.add(\"Leer\"); ts.add(\"Practicar\"); System.out.println(ts.size()); }\n}",
+    "question": {
+      "es": "¿Qué obtiene el tamaño de una lista?",
+      "en": "What returns a list's size?"
+    },
+    "choices": [
+      {
+        "es": "length",
+        "en": "length"
+      },
+      {
+        "es": "count siempre",
+        "en": "always count"
+      },
+      {
+        "es": "size()",
+        "en": "size()"
+      }
+    ]
+  },
+  {
+    "id": "sets-maps",
+    "unit": 6,
+    "title": {
+      "es": "Sets y mapas",
+      "en": "Sets and maps"
+    },
+    "minutes": 8,
+    "example": "import java.util.HashMap;\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String,Integer> notas=new HashMap<>();\n        notas.put(\"Ada\",9);\n        System.out.println(notas.getOrDefault(\"Ada\",0));\n    }\n}",
+    "exercise": {
+      "es": "Guarda dos notas y consulta una clave inexistente con valor predeterminado 0.",
+      "en": "Store two marks and query a missing key with default 0."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "import java.util.HashMap;\npublic class Main {\n    public static void main(String[] args) { HashMap<String,Integer> ns=new HashMap<>(); ns.put(\"Ada\",9); ns.put(\"Grace\",10); System.out.println(ns.getOrDefault(\"Linus\",0)); }\n}",
+    "question": {
+      "es": "¿Qué estructura relaciona claves y valores?",
+      "en": "Which structure relates keys and values?"
+    },
+    "choices": [
+      {
+        "es": "int",
+        "en": "int"
+      },
+      {
+        "es": "Map",
+        "en": "Map"
+      },
+      {
+        "es": "Set",
+        "en": "Set"
+      }
+    ]
+  },
+  {
+    "id": "exceptions",
+    "unit": 6,
+    "title": {
+      "es": "Maneja excepciones",
+      "en": "Handle exceptions"
+    },
+    "minutes": 8,
+    "example": "public class Main {\n    public static void main(String[] args) {\n        try {\n            int n=Integer.parseInt(\"abc\");\n            System.out.println(n);\n        } catch(NumberFormatException e) {\n            System.out.println(\"Escribe un número válido\");\n        }\n    }\n}",
+    "exercise": {
+      "es": "Cambia abc por 42 y observa que catch no se ejecuta.",
+      "en": "Replace abc with 42 and observe that catch does not run."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        try { System.out.println(Integer.parseInt(\"42\")); }\n        catch(NumberFormatException e) { System.out.println(\"Entrada inválida\"); }\n    }\n}",
+    "question": {
+      "es": "¿Por qué no conviene un catch vacío?",
+      "en": "Why avoid an empty catch?"
+    },
+    "choices": [
+      {
+        "es": "Oculta el fallo y dificulta el diagnóstico",
+        "en": "It hides failure and hinders diagnosis"
+      },
+      {
+        "es": "Java siempre lo prohíbe",
+        "en": "Java always forbids it"
+      },
+      {
+        "es": "Convierte int en String",
+        "en": "It turns int into String"
+      }
+    ]
+  },
+  {
+    "id": "project-structure",
+    "unit": 6,
+    "title": {
+      "es": "Organiza tu proyecto",
+      "en": "Organize your project"
+    },
+    "minutes": 8,
+    "example": "class Tarea { String titulo; Tarea(String t) { titulo=t; } }\nclass Gestor { Tarea crear(String t) { return new Tarea(t); } }\npublic class Main {\n    public static void main(String[] args) { System.out.println(new Gestor().crear(\"Practicar\").titulo); }\n}",
+    "exercise": {
+      "es": "Añade validación para rechazar un título vacío al crear una tarea.",
+      "en": "Reject an empty task title at creation."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "class Tarea {\n    String titulo;\n    Tarea(String t) { if(t==null || t.trim().isEmpty()) throw new IllegalArgumentException(\"Título obligatorio\"); titulo=t; }\n}\npublic class Main {\n    public static void main(String[] args) { System.out.println(new Tarea(\"Practicar\").titulo); }\n}",
+    "question": {
+      "es": "¿Dónde ubica Maven las pruebas Java?",
+      "en": "Where does Maven put Java tests?"
+    },
+    "choices": [
+      {
+        "es": "public/images",
+        "en": "public/images"
+      },
+      {
+        "es": "node_modules",
+        "en": "node_modules"
+      },
+      {
+        "es": "src/test/java",
+        "en": "src/test/java"
+      }
+    ]
+  },
+  {
+    "id": "final-challenge",
+    "unit": 6,
+    "title": {
+      "es": "Tu misión final: gestor de tareas",
+      "en": "Your final mission: task manager"
+    },
+    "minutes": 8,
+    "example": "import java.util.ArrayList;\nclass Tarea { String titulo; boolean completa; Tarea(String t) { titulo=t; } }\npublic class Main {\n    public static void main(String[] args) {\n        ArrayList<Tarea> ts=new ArrayList<>();\n        ts.add(new Tarea(\"Aprender Java\"));\n        ts.get(0).completa=true;\n        for(Tarea t:ts) System.out.println(t.titulo + \": \" + t.completa);\n    }\n}",
+    "exercise": {
+      "es": "Añade una segunda tarea pendiente e imprime ambos estados. Continúa con el proyecto guiado.",
+      "en": "Add a second pending task and print both states. Continue with the guided project."
+    },
+    "hint": {
+      "es": "Usa la condición o estructura del ejemplo. Escribe primero el resultado esperado y comprueba un caso distinto.",
+      "en": "Use the example's condition or structure. Write the expected output first and check a different case."
+    },
+    "solution": "import java.util.ArrayList;\nclass Tarea { String titulo; boolean completa; Tarea(String t) { titulo=t; } }\npublic class Main {\n    public static void main(String[] args) {\n        ArrayList<Tarea> ts=new ArrayList<>(); ts.add(new Tarea(\"Leer\")); ts.add(new Tarea(\"Practicar\")); ts.get(0).completa=true;\n        for(Tarea t:ts) System.out.println(t.titulo + \": \" + (t.completa ? \"Hecho\" : \"Pendiente\"));\n    }\n}",
+    "question": {
+      "es": "¿Qué pasa con una lista solo en memoria al cerrar el programa?",
+      "en": "What happens to an in-memory-only list when the program exits?"
+    },
+    "choices": [
+      {
+        "es": "Se convierte en archivo",
+        "en": "It becomes a file"
+      },
+      {
+        "es": "Sus datos no se conservan",
+        "en": "Its data is not preserved"
+      },
+      {
+        "es": "Se guarda automáticamente en MySQL",
+        "en": "It saves itself to MySQL"
+      }
+    ]
+  }
+]

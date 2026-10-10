@@ -1,0 +1,25 @@
+A list changes size and preserves order. `ArrayList<String>` stores String references and provides add, get, remove, and size(). Unlike array length, size is a method.
+
+Indexes still begin at zero. List is the contract; ArrayList an implementation. Prefer a List declaration unless you need implementation details. Do not remove during for-each without an appropriate strategy.
+
+## Observe and run
+
+```java
+import java.util.List;
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        List<String> tareas=new ArrayList<>();
+        tareas.add("Aprender Java");
+        System.out.println(tareas.get(0));
+    }
+}
+```
+
+## Your mission
+
+Add two tasks and show the list size.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

@@ -1,0 +1,23 @@
+A class defines a type with state and behavior. An object is an instance of that class. `new` creates an instance; each object can hold different values.
+
+Model domain concepts such as Book or Task. Avoid one huge class doing everything. Here a nonpublic second class shares the file; later each public class gets its own file.
+
+## Observe and run
+
+```java
+class Libro { String titulo="Java"; }
+public class Main {
+    public static void main(String[] args) {
+        Libro libro=new Libro();
+        System.out.println(libro.titulo);
+    }
+}
+```
+
+## Your mission
+
+Create a Pet class with a name and print an instance's name.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

@@ -1,0 +1,23 @@
+`String` represents text and is immutable: methods such as `toUpperCase()` return another string. `length()` counts UTF-16 units and `charAt(0)` reads the first. Indexes start at zero. An empty string has length zero and cannot provide `charAt(0)`.
+
+Use `equals` to compare string contents. For objects, `==` compares references and can mislead you because literals may be reused internally. `+` is convenient for small messages; later you will use `StringBuilder` to build lots of text.
+
+## Observe and run
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String nombre = "Java";
+        System.out.println(nombre.toUpperCase());
+        System.out.println(nombre.equals("Java"));
+    }
+}
+```
+
+## Your mission
+
+Print your name's length and an uppercase version.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

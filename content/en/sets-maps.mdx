@@ -1,0 +1,24 @@
+A Set stores unique values; adding the same value twice does not create two entries. A Map relates keys to values, such as student names and marks. Updating a key replaces its value.
+
+HashSet and HashMap do not guarantee iteration order. Use ordered implementations when order matters. get can return null for a missing key; use containsKey or getOrDefault.
+
+## Observe and run
+
+```java
+import java.util.HashMap;
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String,Integer> notas=new HashMap<>();
+        notas.put("Ada",9);
+        System.out.println(notas.getOrDefault("Ada",0));
+    }
+}
+```
+
+## Your mission
+
+Store two marks and query a missing key with default 0.
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.

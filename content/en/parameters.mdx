@@ -1,0 +1,20 @@
+A parameter is declared in the signature; an argument is the supplied value. `int sum(int a, int b)` takes two integers and returns one with `return`.
+
+`void` methods do not return a value. Java passes arguments by value; for objects, that value is a reference. You can modify the referenced object, but reassigning a parameter does not reassign the caller's variable.
+
+## Observe and run
+
+```java
+public class Main {
+    static int sumar(int a,int b) { return a+b; }
+    public static void main(String[] args) { System.out.println(sumar(3,4)); }
+}
+```
+
+## Your mission
+
+Create square(int n) and test square(5).
+
+## Before moving on
+
+Predict the output before running. Then change a value, explain the result, and compare it with your prediction. If an error appears, locate its line and fix the initial cause first.
