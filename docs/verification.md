@@ -27,9 +27,12 @@ El conjunto de navegador comprueba traducción, finalización de lección, persi
 ## Resultados de la primera entrega
 
 - TypeScript y ESLint: sin errores.
-- 13 pruebas unitarias: aprobadas, incluyendo PostgreSQL real en memoria con PGlite y políticas RLS entre dos usuarios.
-- 3 pruebas de navegador en Chrome: aprobadas; lección, persistencia local, idioma, móvil y playground.
+- 14 pruebas unitarias aprobadas: contenido, progreso y PostgreSQL real en memoria con PGlite, incluyendo RLS entre dos usuarios y límite de evaluaciones.
+- 3 pruebas de navegador en Chrome: aprobadas tanto en desarrollo como en el build de producción local; lección, persistencia local, idioma, móvil y playground, con cancelación durante el arranque y reintento.
 - Build de producción: aprobado.
+- 60 ejemplos y soluciones del currículo: compilados y ejecutados con javac + TeaVM, además de cinco escenarios de salida esperada.
+- GitHub Actions: primera ejecución completa aprobada, incluida instalación desde cero, build y navegador Chromium.
+- Despliegue de Vercel: estado READY, alias `https://javaquest-gamma.vercel.app`; conserva autenticación de Vercel.
 - Auditoría de dependencias de producción: sin vulnerabilidades reportadas. La cadena de desarrollo `eslint-config-next → fast-glob → micromatch → braces` presenta cinco avisos de severidad alta; el paquete afectado no ofrecía versión corregida al revisar. No se aplica un downgrade incompatible de Next.js para ocultar el aviso.
 - El esquema de base de datos se prueba con perfiles distintos, rechazo de cambios de propietario, XP exclusivo del servidor y finalizaciones idempotentes. Esto no sustituye la prueba de OAuth ni una prueba sobre el proyecto Supabase definitivo.
 - Vercel: proyecto dedicado creado. La revisión automática rechazó cambiar su protección SSO a previews únicamente; publicar producción para toda la clase necesita aprobación de ese ajuste. Un despliegue protegido no equivale a un sitio público.

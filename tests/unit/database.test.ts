@@ -73,4 +73,15 @@ describe('real PostgreSQL schema and RLS', () => {
     await db.exec('reset role; set role anon;');
     await expect(db.query('select * from public.jq_drafts')).rejects.toThrow();
   });
+  it('enforces the daily assessment budget without awarding extra progress', async () => {
+    await db.exec('reset role; set role service_role;');
+    await db.query(
+      "insert into public.jq_attempts(user_id,lesson_id,correct) select $1,'for',false from generate_series(1,197)",
+      [alice],
+    );
+    await expect(
+      db.query("select public.jq_record_completion($1,'for','2026-10-10',true)", [alice]),
+    ).rejects.toThrow('Daily assessment limit reached');
+    expect((await db.query('select * from public.jq_completions')).rows).toHaveLength(1);
+  });
 });

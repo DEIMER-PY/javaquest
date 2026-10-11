@@ -2,6 +2,10 @@
 
 **Aprende Java, un paso a la vez.** Una plataforma educativa gratuita para aprender con tu clase, experimentar con código real y construir tus primeros proyectos.
 
+[![JavaQuest checks](https://github.com/DEIMER-PY/javaquest/actions/workflows/ci.yml/badge.svg)](https://github.com/DEIMER-PY/javaquest/actions/workflows/ci.yml)
+
+**Despliegue preparado:** https://javaquest-gamma.vercel.app — actualmente protegido por Vercel Authentication. La apertura a la clase está pendiente de aprobación del ajuste SSO; las cuentas Supabase están pendientes de configuración gratuita.
+
 [English documentation](docs/README.en.md) · [Arquitectura](docs/architecture.md) · [Instalación](docs/setup.md) · [Ruta educativa](docs/curriculum.md) · [Verificación](docs/verification.md)
 
 ![JavaQuest en escritorio](docs/images/dashboard-desktop.png)
