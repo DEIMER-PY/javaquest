@@ -1,12 +1,13 @@
 'use client';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Download, FolderCode, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Download, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
 import { projects, type Project } from '@/lib/projects';
 import { t } from '@/lib/i18n';
 import { useLearning } from './providers';
 import { Button } from './ui/button';
 import { CodeCopy } from './code-copy';
+import { ProjectIcon } from './project-icon';
 export function Projects() {
   const { locale } = useLearning();
   return (
@@ -32,7 +33,7 @@ export function Projects() {
             key={project.id}
           >
             <div className="feature-icon peach">
-              <FolderCode size={23} />
+              <ProjectIcon id={project.id} size={25} />
             </div>
             <span className="eyebrow">
               {t(locale, 'DESDE UNIDAD', 'FROM UNIT')} {project.unit} · {project.minutes} MIN

@@ -6,6 +6,7 @@ import { useLearning } from './providers';
 import { t } from '@/lib/i18n';
 import { dayKey, streak } from '@/lib/progress';
 import { Button } from './ui/button';
+import lessons from '@/lib/lessons.json';
 export function Profile() {
   const { locale, user, progress, refresh, setNotice } = useLearning();
   const [name, setName] = useState<string | null>(null);
@@ -59,7 +60,7 @@ export function Profile() {
     },
     {
       Icon: Trophy,
-      unlocked: count >= 30,
+      unlocked: count >= lessons.length,
       title: t(locale, 'Constructor de ideas', 'Idea builder'),
       body: t(locale, 'Completa la ruta inicial', 'Complete the initial path'),
     },
@@ -88,7 +89,7 @@ export function Profile() {
           <BookOpen size={21} />
           <h2>
             {count}
-            <span className="text-base text-muted-foreground"> / 30</span>
+            <span className="text-base text-muted-foreground"> / {lessons.length}</span>
           </h2>
           <p>{t(locale, 'Lecciones completadas', 'Completed lessons')}</p>
         </section>

@@ -1,7 +1,8 @@
 'use client';
 import Link from 'next/link';
-import { BookOpen, Check, ChevronRight, Flag, Rocket } from 'lucide-react';
+import { BookOpen, Check, ChevronRight, Flag } from 'lucide-react';
 import { useLearning } from './providers';
+import { UnitIcon } from './unit-icon';
 import { labels, t } from '@/lib/i18n';
 import { units, upcoming } from '@/lib/course';
 import lessons from '@/lib/lessons.json';
@@ -27,7 +28,7 @@ export function LearningPath() {
         <section key={unit.id} className="course-section">
           <div className={`unit-card tone-${unit.color}`}>
             <div className="unit-icon">
-              <Rocket size={25} />
+              <UnitIcon name={unit.icon} size={25} />
             </div>
             <div className="unit-body">
               <span className="unit-label">
@@ -37,7 +38,8 @@ export function LearningPath() {
               <p>{unit.description[locale]}</p>
             </div>
             <span className="level-chip">
-              {lessons.filter((l) => l.unit === unit.id && done.has(l.id)).length}/5
+              {lessons.filter((l) => l.unit === unit.id && done.has(l.id)).length}/
+              {lessons.filter((l) => l.unit === unit.id).length}
             </span>
           </div>
           <div className="lesson-list">

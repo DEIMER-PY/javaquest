@@ -1,0 +1,505 @@
+[
+  {
+    "id": "java",
+    "term": {
+      "es": "Java",
+      "en": "Java"
+    },
+    "definition": {
+      "es": "Lenguaje de programación con tipado estático y orientación a objetos. El código suele compilarse a bytecode y ejecutarse en una JVM compatible.",
+      "en": "A statically typed, object-oriented programming language. Code is usually compiled to bytecode and run by a compatible JVM."
+    },
+    "category": "basics",
+    "example": {
+      "code": "System.out.println(\"Hola, Java!\");",
+      "language": "java"
+    },
+    "lessonId": "java-story"
+  },
+  {
+    "id": "jdk",
+    "term": {
+      "es": "JDK",
+      "en": "JDK"
+    },
+    "definition": {
+      "es": "Java Development Kit: el conjunto de herramientas para desarrollar Java. Incluye el compilador javac y un entorno de ejecución.",
+      "en": "Java Development Kit: the tools used to develop Java applications. It includes the javac compiler and a runtime environment."
+    },
+    "category": "tooling",
+    "example": {
+      "code": "java --version\njavac --version",
+      "language": "shell"
+    },
+    "lessonId": "installation"
+  },
+  {
+    "id": "jvm",
+    "term": {
+      "es": "JVM",
+      "en": "JVM"
+    },
+    "definition": {
+      "es": "Java Virtual Machine: la máquina virtual que ejecuta bytecode. Sus implementaciones permiten ejecutar programas Java en distintos sistemas compatibles.",
+      "en": "Java Virtual Machine: the virtual machine that executes bytecode. Its implementations run Java programs on different compatible systems."
+    },
+    "category": "basics",
+    "example": {
+      "code": "java Main",
+      "language": "shell"
+    },
+    "lessonId": "jdk-jvm"
+  },
+  {
+    "id": "jre",
+    "term": {
+      "es": "JRE",
+      "en": "JRE"
+    },
+    "definition": {
+      "es": "Java Runtime Environment: el entorno necesario para ejecutar Java. Para aprender y compilar, instala un JDK; la distribución de runtimes varía según el proveedor.",
+      "en": "Java Runtime Environment: the environment needed to run Java. Install a JDK to learn and compile; runtime packaging varies by vendor."
+    },
+    "category": "tooling",
+    "example": {
+      "code": "JDK = herramientas de desarrollo + entorno de ejecución",
+      "language": "text"
+    },
+    "lessonId": "jdk-jvm"
+  },
+  {
+    "id": "bytecode",
+    "term": {
+      "es": "Bytecode",
+      "en": "Bytecode"
+    },
+    "definition": {
+      "es": "Instrucciones intermedias generadas al compilar Java. Los archivos .class almacenan ese código, que una JVM puede ejecutar.",
+      "en": "Intermediate instructions generated when Java is compiled. Files ending in .class store that code, which a JVM can execute."
+    },
+    "category": "basics",
+    "example": {
+      "code": "Main.java → javac → Main.class → JVM",
+      "language": "text"
+    },
+    "lessonId": "jdk-jvm"
+  },
+  {
+    "id": "compiler",
+    "term": {
+      "es": "Compilador",
+      "en": "Compiler"
+    },
+    "definition": {
+      "es": "Herramienta que transforma código fuente en otra representación y comprueba reglas del lenguaje. En el JDK, javac genera bytecode a partir de archivos .java.",
+      "en": "A tool translating source code to another representation and checking language rules. In the JDK, javac generates bytecode from .java files."
+    },
+    "category": "basics",
+    "example": {
+      "code": "javac Main.java",
+      "language": "shell"
+    },
+    "lessonId": "jdk-jvm"
+  },
+  {
+    "id": "terminal",
+    "term": {
+      "es": "Terminal",
+      "en": "Terminal"
+    },
+    "definition": {
+      "es": "Interfaz de texto para ejecutar comandos. La usarás para verificar herramientas, compilar programas y ejecutar proyectos locales.",
+      "en": "A text interface for running commands. Use it to verify tools, compile programs, and run local projects."
+    },
+    "category": "tooling",
+    "example": {
+      "code": "mkdir hola-java\ncd hola-java\njavac Main.java\njava Main",
+      "language": "shell"
+    },
+    "lessonId": "installation"
+  },
+  {
+    "id": "ide",
+    "term": {
+      "es": "IDE",
+      "en": "IDE"
+    },
+    "definition": {
+      "es": "Entorno de desarrollo integrado con edición, navegación y depuración de código. IntelliJ IDEA y los editores configurados para Java ayudan a trabajar en proyectos.",
+      "en": "An integrated development environment with code editing, navigation, and debugging. IntelliJ IDEA and Java-configured editors help you work on projects."
+    },
+    "category": "tooling",
+    "example": {
+      "code": "Editor → Compilador → Depurador",
+      "language": "text"
+    },
+    "lessonId": "installation"
+  },
+  {
+    "id": "variable",
+    "term": {
+      "es": "Variable",
+      "en": "Variable"
+    },
+    "definition": {
+      "es": "Nombre asociado a un valor y un tipo. Java verifica que las operaciones y asignaciones sean compatibles con ese tipo.",
+      "en": "A name associated with a value and a type. Java checks that operations and assignments are compatible with the type."
+    },
+    "category": "language",
+    "example": {
+      "code": "int edad = 20;",
+      "language": "java"
+    },
+    "lessonId": "variables"
+  },
+  {
+    "id": "type",
+    "term": {
+      "es": "Tipo de dato",
+      "en": "Data type"
+    },
+    "definition": {
+      "es": "Define qué valores puede representar una variable y qué operaciones admite. int, boolean y String son ejemplos, aunque String es un tipo de referencia.",
+      "en": "Defines the values a variable can represent and the operations it supports. int, boolean, and String are examples, though String is a reference type."
+    },
+    "category": "language",
+    "example": {
+      "code": "int puntos = 25;\nboolean completa = true;",
+      "language": "java"
+    },
+    "lessonId": "variables"
+  },
+  {
+    "id": "string",
+    "term": {
+      "es": "String",
+      "en": "String"
+    },
+    "definition": {
+      "es": "Tipo para representar texto. Las cadenas de Java son inmutables; utiliza equals para comparar su contenido.",
+      "en": "A type representing text. Java strings are immutable; use equals to compare their contents."
+    },
+    "category": "language",
+    "example": {
+      "code": "\"Java\".equals(\"Java\")",
+      "language": "java"
+    },
+    "lessonId": "strings"
+  },
+  {
+    "id": "condition",
+    "term": {
+      "es": "Condición",
+      "en": "Condition"
+    },
+    "definition": {
+      "es": "Expresión que produce true o false y permite decidir qué código ejecutar. Puede combinar comparaciones con operadores lógicos.",
+      "en": "An expression producing true or false to decide which code runs. It can combine comparisons with logical operators."
+    },
+    "category": "language",
+    "example": {
+      "code": "if (edad >= 18) {\n    System.out.println(\"Puedes continuar\");\n}",
+      "language": "java"
+    },
+    "lessonId": "conditions"
+  },
+  {
+    "id": "loop",
+    "term": {
+      "es": "Bucle",
+      "en": "Loop"
+    },
+    "definition": {
+      "es": "Estructura que repite instrucciones. for y while necesitan condiciones de salida que eviten repeticiones infinitas involuntarias.",
+      "en": "A structure repeating instructions. for and while need exit conditions to avoid unintended infinite repetition."
+    },
+    "category": "language",
+    "example": {
+      "code": "for (int i = 0; i < 3; i++) {\n    System.out.println(i);\n}",
+      "language": "java"
+    },
+    "lessonId": "for"
+  },
+  {
+    "id": "method",
+    "term": {
+      "es": "Método",
+      "en": "Method"
+    },
+    "definition": {
+      "es": "Bloque de código con nombre que realiza una tarea. Puede recibir parámetros y devolver un valor; void indica que no devuelve uno.",
+      "en": "A named block of code performing a task. It can receive parameters and return a value; void means it does not return one."
+    },
+    "category": "language",
+    "example": {
+      "code": "static int sumar(int a, int b) {\n    return a + b;\n}",
+      "language": "java"
+    },
+    "lessonId": "methods"
+  },
+  {
+    "id": "array",
+    "term": {
+      "es": "Array",
+      "en": "Array"
+    },
+    "definition": {
+      "es": "Colección de tamaño fijo cuyos elementos tienen el mismo tipo. Sus índices comienzan en cero y length indica su tamaño.",
+      "en": "A fixed-size collection whose elements share a type. Indexes start at zero and length gives its size."
+    },
+    "category": "language",
+    "example": {
+      "code": "int[] notas = {7, 8, 9};\nSystem.out.println(notas[0]);",
+      "language": "java"
+    },
+    "lessonId": "arrays"
+  },
+  {
+    "id": "class",
+    "term": {
+      "es": "Clase",
+      "en": "Class"
+    },
+    "definition": {
+      "es": "Define un tipo con atributos y métodos que describen estado y comportamiento. Los objetos son instancias de una clase.",
+      "en": "Defines a type with fields and methods describing state and behavior. Objects are instances of a class."
+    },
+    "category": "oop",
+    "example": {
+      "code": "class Tarea {\n    String titulo;\n    boolean completada;\n}",
+      "language": "java"
+    },
+    "lessonId": "classes"
+  },
+  {
+    "id": "object",
+    "term": {
+      "es": "Objeto",
+      "en": "Object"
+    },
+    "definition": {
+      "es": "Instancia de una clase con su propio estado. La palabra new crea muchas de las instancias que usarás en los ejercicios.",
+      "en": "An instance of a class with its own state. The new keyword creates many of the instances you will use in exercises."
+    },
+    "category": "oop",
+    "example": {
+      "code": "Tarea tarea = new Tarea();",
+      "language": "java"
+    },
+    "lessonId": "classes"
+  },
+  {
+    "id": "constructor",
+    "term": {
+      "es": "Constructor",
+      "en": "Constructor"
+    },
+    "definition": {
+      "es": "Inicializa una instancia. Lleva el nombre de la clase y no declara tipo de retorno; es un buen lugar para validar datos iniciales.",
+      "en": "Initializes an instance. It shares the class name and declares no return type; it is a useful place to validate initial data."
+    },
+    "category": "oop",
+    "example": {
+      "code": "Persona(String nombre) {\n    this.nombre = nombre;\n}",
+      "language": "java"
+    },
+    "lessonId": "constructors"
+  },
+  {
+    "id": "encapsulation",
+    "term": {
+      "es": "Encapsulación",
+      "en": "Encapsulation"
+    },
+    "definition": {
+      "es": "Mantiene los detalles internos bajo control y expone operaciones que preservan reglas. Un atributo private no se modifica directamente desde otras clases.",
+      "en": "Keeps internal details controlled and exposes operations preserving rules. A private field cannot be directly changed from other classes."
+    },
+    "category": "oop",
+    "example": {
+      "code": "private int saldo;\npublic int getSaldo() { return saldo; }",
+      "language": "java"
+    },
+    "lessonId": "encapsulation"
+  },
+  {
+    "id": "inheritance",
+    "term": {
+      "es": "Herencia",
+      "en": "Inheritance"
+    },
+    "definition": {
+      "es": "Permite derivar una clase de otra cuando existe una relación «es un». Java utiliza extends y admite una sola clase base por clase.",
+      "en": "Lets a class derive from another when an is-a relationship exists. Java uses extends and allows one base class per class."
+    },
+    "category": "oop",
+    "example": {
+      "code": "class Perro extends Animal { }",
+      "language": "java"
+    },
+    "lessonId": "inheritance"
+  },
+  {
+    "id": "interface",
+    "term": {
+      "es": "Interfaz",
+      "en": "Interface"
+    },
+    "definition": {
+      "es": "Contrato de capacidades que una clase puede implementar. Ayuda a separar lo que necesita el consumidor de cómo se realiza una operación.",
+      "en": "A contract of capabilities a class can implement. It separates what the consumer needs from how an operation is performed."
+    },
+    "category": "oop",
+    "example": {
+      "code": "interface Saludable {\n    String saludar();\n}",
+      "language": "java"
+    },
+    "lessonId": "interfaces"
+  },
+  {
+    "id": "collection",
+    "term": {
+      "es": "Colección",
+      "en": "Collection"
+    },
+    "definition": {
+      "es": "Estructura para agrupar y trabajar con objetos. List, Set y Map tienen propiedades diferentes: orden, unicidad y asociación de claves con valores.",
+      "en": "A structure grouping and working with objects. List, Set, and Map differ in ordering, uniqueness, and key-value association."
+    },
+    "category": "language",
+    "example": {
+      "code": "List<String> tareas = new ArrayList<>();\ntareas.add(\"Practicar Java\");",
+      "language": "java"
+    },
+    "lessonId": "lists"
+  },
+  {
+    "id": "exception",
+    "term": {
+      "es": "Excepción",
+      "en": "Exception"
+    },
+    "definition": {
+      "es": "Situación que altera el flujo normal de ejecución. try y catch permiten tratar fallos que el programa sabe manejar.",
+      "en": "A situation disrupting normal execution. try and catch let the program handle failures it can meaningfully recover from."
+    },
+    "category": "language",
+    "example": {
+      "code": "try {\n    Integer.parseInt(\"abc\");\n} catch (NumberFormatException error) {\n    System.out.println(\"Entrada inválida\");\n}",
+      "language": "java"
+    },
+    "lessonId": "exceptions"
+  },
+  {
+    "id": "git",
+    "term": {
+      "es": "Git",
+      "en": "Git"
+    },
+    "definition": {
+      "es": "Sistema de control de versiones que registra cambios del código. Un commit representa un conjunto de cambios; GitHub es un servicio donde puedes alojar repositorios.",
+      "en": "A version-control system recording code changes. A commit represents a set of changes; GitHub is a service hosting repositories."
+    },
+    "category": "tooling",
+    "example": {
+      "code": "git status\ngit log --oneline",
+      "language": "shell"
+    }
+  },
+  {
+    "id": "maven",
+    "term": {
+      "es": "Maven",
+      "en": "Maven"
+    },
+    "definition": {
+      "es": "Herramienta para construir proyectos Java y gestionar dependencias. Su configuración principal suele estar en pom.xml.",
+      "en": "A tool for building Java projects and managing dependencies. Its main configuration is usually pom.xml."
+    },
+    "category": "tooling",
+    "example": {
+      "code": "mvn test\nmvn package",
+      "language": "shell"
+    }
+  },
+  {
+    "id": "api",
+    "term": {
+      "es": "API",
+      "en": "API"
+    },
+    "definition": {
+      "es": "Interfaz que permite a programas comunicarse mediante operaciones definidas. Una API web puede recibir peticiones HTTP y devolver datos.",
+      "en": "An interface allowing programs to communicate through defined operations. A web API can receive HTTP requests and return data."
+    },
+    "category": "backend",
+    "example": {
+      "code": "GET /api/tareas → lista de tareas",
+      "language": "text"
+    }
+  },
+  {
+    "id": "rest",
+    "term": {
+      "es": "REST",
+      "en": "REST"
+    },
+    "definition": {
+      "es": "Estilo arquitectónico para sistemas distribuidos. Las APIs REST suelen identificar recursos con URLs y usar métodos HTTP como GET y POST.",
+      "en": "An architectural style for distributed systems. REST APIs commonly identify resources with URLs and use HTTP methods such as GET and POST."
+    },
+    "category": "backend",
+    "example": {
+      "code": "GET /tareas\nPOST /tareas",
+      "language": "text"
+    }
+  },
+  {
+    "id": "sql",
+    "term": {
+      "es": "SQL",
+      "en": "SQL"
+    },
+    "definition": {
+      "es": "Lenguaje para consultar y gestionar datos en bases relacionales. SELECT consulta filas; INSERT agrega datos.",
+      "en": "A language for querying and managing data in relational databases. SELECT queries rows; INSERT adds data."
+    },
+    "category": "data",
+    "example": {
+      "code": "SELECT titulo FROM tareas;",
+      "language": "sql"
+    }
+  },
+  {
+    "id": "orm",
+    "term": {
+      "es": "ORM",
+      "en": "ORM"
+    },
+    "definition": {
+      "es": "Mapeo entre objetos de una aplicación y tablas relacionales. Hibernate es una herramienta del ecosistema Java que implementa este enfoque.",
+      "en": "Mapping between application objects and relational tables. Hibernate is a Java ecosystem tool implementing this approach."
+    },
+    "category": "data",
+    "example": {
+      "code": "Objeto Tarea ↔ tabla tareas",
+      "language": "text"
+    }
+  },
+  {
+    "id": "spring-boot",
+    "term": {
+      "es": "Spring Boot",
+      "en": "Spring Boot"
+    },
+    "definition": {
+      "es": "Herramienta del ecosistema Spring que facilita configurar y construir aplicaciones Java. Se utiliza frecuentemente para desarrollar servicios backend y APIs.",
+      "en": "A Spring ecosystem tool simplifying Java application setup and development. It is frequently used to build backend services and APIs."
+    },
+    "category": "backend",
+    "example": {
+      "code": "Aplicación Java + Spring + configuración automática",
+      "language": "text"
+    }
+  }
+]

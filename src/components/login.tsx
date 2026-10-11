@@ -2,8 +2,9 @@
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useState, Suspense } from 'react';
-import { Code2, GitBranch, ArrowRight } from 'lucide-react';
+import { GitBranch, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
+import { BrandMark } from './brand';
 import { useLearning } from './providers';
 import { t } from '@/lib/i18n';
 import { browserClient } from '@/lib/supabase/client';
@@ -34,9 +35,7 @@ function LoginForm() {
   }
   return (
     <section className="login-card card">
-      <span className="brand-icon">
-        <Code2 size={29} />
-      </span>
+      <BrandMark />
       <span className="eyebrow justify-center">
         {t(locale, 'TU AVENTURA, EN CUALQUIER LUGAR', 'YOUR ADVENTURE, ANYWHERE')}
       </span>
@@ -52,7 +51,7 @@ function LoginForm() {
       </p>
       {user ? (
         <Button asChild>
-          <Link href={`/${locale}`}>
+          <Link href={`/${locale}/dashboard`}>
             {t(locale, 'Volver a mi aventura', 'Back to my adventure')}
             <ArrowRight size={16} />
           </Link>

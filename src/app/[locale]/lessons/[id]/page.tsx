@@ -10,6 +10,8 @@ import { isLocale, t } from '@/lib/i18n';
 import { Quiz } from '@/components/quiz';
 import { CodeCopy } from '@/components/code-copy';
 import { Button } from '@/components/ui/button';
+import { JvmDiagram } from '@/components/jvm-diagram';
+import Image from 'next/image';
 export async function generateMetadata({
   params,
 }: {
@@ -33,7 +35,23 @@ export default async function LessonPage({
     path.join(process.cwd(), 'content', locale, `${lesson.id}.mdx`),
     'utf8',
   );
-  const { content } = await compileMDX({ source });
+  const { content } = await compileMDX({
+    source,
+    components: {
+      img: ({ src, alt }) =>
+        src === '/images/jvm-flow.svg' ? (
+          <JvmDiagram locale={locale} />
+        ) : (
+          <Image
+            src={String(src)}
+            alt={alt ?? ''}
+            width={760}
+            height={400}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        ),
+    },
+  });
   return (
     <>
       <Link href={`/${locale}/learn`} className="text-link mb-6">
@@ -129,6 +147,10 @@ export default async function LessonPage({
           </p>
           <Link href={`/${locale}/resources`} className="text-link">
             {t(locale, 'Guía de instalación', 'Installation guide')}
+            <ArrowRight size={14} />
+          </Link>
+          <Link href={`/${locale}/glossary`} className="text-link mt-5">
+            {t(locale, 'Consultar el glosario', 'Open the glossary')}
             <ArrowRight size={14} />
           </Link>
         </aside>

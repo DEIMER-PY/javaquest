@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
@@ -11,12 +10,13 @@ import {
   FolderCode,
   Lightbulb,
   Play,
-  Rocket,
   Sparkles,
   Target,
   Trophy,
 } from 'lucide-react';
 import { Button } from './ui/button';
+import { CodePreview } from './code-preview';
+import { UnitIcon } from './unit-icon';
 import { useLearning } from './providers';
 import { labels, t } from '@/lib/i18n';
 import { units } from '@/lib/course';
@@ -91,23 +91,7 @@ export function Dashboard() {
           </div>
         </div>
         <div className="hero-art">
-          <span className="art-code code-one">
-            System.out.println(<span>&quot;Hola!&quot;</span>);
-          </span>
-          <Image
-            src="/images/java-bot.svg"
-            width={440}
-            height={340}
-            alt={t(
-              locale,
-              'Byte, nuestro robot compañero de aprendizaje',
-              'Byte, our learning companion robot',
-            )}
-            priority
-          />
-          <span className="art-code code-two">
-            <span>public class</span> TuFuturo {'{ }'}
-          </span>
+          <CodePreview locale={locale} compact />
         </div>
       </section>
       <div className="dashboard-grid">
@@ -125,7 +109,7 @@ export function Dashboard() {
             </Link>
           </div>
           <div className="unit-list">
-            {units.slice(0, 3).map((unit, i) => {
+            {units.slice(0, 3).map((unit) => {
               const unitLessons = lessons.filter((x) => x.unit === unit.id);
               const count = unitLessons.filter((x) => done.has(x.id)).length;
               const first = unitLessons.find((x) => !done.has(x.id)) ?? unitLessons[0];
@@ -136,13 +120,7 @@ export function Dashboard() {
                   className={`unit-card tone-${unit.color}`}
                 >
                   <div className="unit-icon">
-                    {i === 0 ? (
-                      <Rocket size={27} />
-                    ) : i === 1 ? (
-                      <Code2 size={27} />
-                    ) : (
-                      <Target size={27} />
-                    )}
+                    <UnitIcon name={unit.icon} size={25} />
                   </div>
                   <div className="unit-body">
                     <span className="unit-label">
@@ -210,9 +188,9 @@ export function Dashboard() {
                 <ArrowRight size={16} />
               </span>
               <div className="project-tags">
-                <span>Calculadora</span>
-                <span>Guess the number</span>
-                <span>Task manager</span>
+                <span>{t(locale, 'Calculadora', 'Calculator')}</span>
+                <span>{t(locale, 'Adivina el número', 'Guess the number')}</span>
+                <span>{t(locale, 'Gestor de tareas', 'Task manager')}</span>
               </div>
             </Link>
           </div>
@@ -281,7 +259,9 @@ export function Dashboard() {
           </section>
           <section className="tip-card">
             <Lightbulb size={22} />
-            <span className="eyebrow">{t(locale, 'UN CONSEJO DE BYTE', 'A TIP FROM BYTE')}</span>
+            <span className="eyebrow">
+              {t(locale, 'UN CONSEJO PARA APRENDER', 'A LEARNING TIP')}
+            </span>
             <h3>{t(locale, 'No necesitas saberlo todo.', 'You don’t need to know it all.')}</h3>
             <p>
               {t(

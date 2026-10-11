@@ -3,7 +3,7 @@ import { isLocale } from '@/lib/i18n';
 import { serverClient } from '@/lib/supabase/server';
 import { hasSupabase } from '@/lib/supabase/config';
 import { LearningProvider } from '@/components/providers';
-import { Shell } from '@/components/shell';
+import { SiteShell } from '@/components/site-shell';
 export default async function LocaleLayout({
   children,
   params,
@@ -31,7 +31,7 @@ export default async function LocaleLayout({
       user={user}
       configured={hasSupabase()}
     >
-      <Shell>{children}</Shell>
+      <SiteShell>{children}</SiteShell>
     </LearningProvider>
   );
 }

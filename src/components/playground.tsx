@@ -2,15 +2,33 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState } from 'react';
 import { java } from '@codemirror/lang-java';
+import { HighlightStyle, syntaxHighlighting } from '@codemirror/language';
+import { tags } from '@lezer/highlight';
 import { Download, Play, Plus, RotateCcw, Save, Square, Terminal, Trash2 } from 'lucide-react';
 import { Button } from './ui/button';
 import { useLearning } from './providers';
+import { useTheme } from './theme';
 import { t } from '@/lib/i18n';
 import lessons from '@/lib/lessons.json';
 const CodeMirror = dynamic(() => import('@uiw/react-codemirror'), {
   ssr: false,
   loading: () => <div className="loading">Loading editor…</div>,
 });
+const codeExtensions = [
+  java(),
+  syntaxHighlighting(
+    HighlightStyle.define([
+      { tag: tags.keyword, color: 'var(--code-keyword)' },
+      { tag: tags.comment, color: 'var(--code-comment)' },
+      { tag: tags.string, color: 'var(--code-string)' },
+      { tag: tags.number, color: 'var(--code-keyword)' },
+      { tag: tags.typeName, color: 'var(--code-fg)' },
+      { tag: tags.variableName, color: 'var(--code-fg)' },
+      { tag: tags.operator, color: 'var(--code-fg)' },
+      { tag: tags.punctuation, color: 'var(--code-fg)' },
+    ]),
+  ),
+];
 type File = { name: string; code: string };
 const defaults: File[] = [
   {
@@ -21,6 +39,7 @@ const defaults: File[] = [
 type Status = 'idle' | 'loading' | 'ready' | 'compiling' | 'running';
 export function Playground({ lessonId }: { lessonId?: string }) {
   const { locale, user, setNotice } = useLearning();
+  const { theme } = useTheme();
   const lesson = lessons.find((l) => l.id === lessonId);
   const [files, setFiles] = useState<File[]>(
     lesson ? [{ name: 'Main.java', code: lesson.example }] : defaults,
@@ -287,8 +306,8 @@ export function Playground({ lessonId }: { lessonId?: string }) {
             <CodeMirror
               value={files[active]?.code ?? ''}
               height="390px"
-              extensions={[java()]}
-              theme="dark"
+              extensions={codeExtensions}
+              theme={theme}
               aria-label={t(locale, 'Código Java', 'Java code')}
               onChange={(code) =>
                 setFiles((current) =>
