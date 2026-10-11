@@ -4,7 +4,7 @@
 
 [![JavaQuest checks](https://github.com/DEIMER-PY/javaquest/actions/workflows/ci.yml/badge.svg)](https://github.com/DEIMER-PY/javaquest/actions/workflows/ci.yml)
 
-**Despliegue preparado:** https://javaquest-gamma.vercel.app — actualmente protegido por Vercel Authentication. La apertura a la clase está pendiente de aprobación del ajuste SSO; las cuentas Supabase están pendientes de configuración gratuita.
+**Demo pública:** https://javaquest-gamma.vercel.app — las lecciones, el temario, el glosario y el playground se pueden explorar sin crear una cuenta. La sincronización de progreso mediante Supabase requiere configurar las variables y proveedores OAuth descritos en la guía de instalación.
 
 [English documentation](docs/README.en.md) · [Diseño y referencias](docs/design-system.md) · [Arquitectura](docs/architecture.md) · [Instalación](docs/setup.md) · [Ruta educativa](docs/curriculum.md) · [Verificación](docs/verification.md)
 
