@@ -1,5 +1,11 @@
 # Arquitectura y decisiones
 
+## Entrada pública y temas
+
+`SiteShell` muestra navegación pública para portada, glosario y login; las rutas de aprendizaje conservan el panel lateral. La portada del idioma presenta el temario; el panel se encuentra en `/{locale}/dashboard`.
+
+`ThemeProvider` centraliza claro/oscuro con una suscripción al estado del documento, conserva la clave local existente y sincroniza cambios entre pestañas. El editor se carga con `next/dynamic` solo en el playground y sus colores siguen el mismo tema. El glosario utiliza contenido versionado y filtrado local, sin servicios externos.
+
 ## Flujo de aprendizaje
 
 ```mermaid

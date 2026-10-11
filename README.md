@@ -6,17 +6,19 @@
 
 **Despliegue preparado:** https://javaquest-gamma.vercel.app — actualmente protegido por Vercel Authentication. La apertura a la clase está pendiente de aprobación del ajuste SSO; las cuentas Supabase están pendientes de configuración gratuita.
 
-[English documentation](docs/README.en.md) · [Arquitectura](docs/architecture.md) · [Instalación](docs/setup.md) · [Ruta educativa](docs/curriculum.md) · [Verificación](docs/verification.md)
+[English documentation](docs/README.en.md) · [Diseño y referencias](docs/design-system.md) · [Arquitectura](docs/architecture.md) · [Instalación](docs/setup.md) · [Ruta educativa](docs/curriculum.md) · [Verificación](docs/verification.md)
 
-![JavaQuest en escritorio](docs/images/dashboard-desktop.png)
+![Portada pública de JavaQuest en modo oscuro](docs/images/landing-desktop-dark.png)
 
 ## Qué incluye
 
 - 30 lecciones completas en español e inglés: historia, JVM, herramientas, tipos, control de flujo, métodos, arrays, objetos y colecciones.
+- Portada pública con temario desplegable y un glosario bilingüe de treinta conceptos, búsqueda por categoría y enlaces a las lecciones.
 - Playground propio con javac y TeaVM en WebAssembly: ejecuta Java en tu navegador, sin API de pago.
 - Tres proyectos locales guiados: calculadora, adivina el número y gestor de tareas.
 - Evaluaciones, progreso, XP, logros y sesiones diarias. Las cuentas se sincronizan mediante Supabase cuando está configurado.
 - Diseño responsive, tema claro/oscuro, navegación con teclado y movimiento reducido.
+- Identidad negro/amarillo inspirada en JSCamp, monograma JQ y fuentes gratuitas autoalojadas. El modo oscuro es inicial y se conserva la preferencia del visitante.
 - Ruta de ampliación hacia pruebas, SQL, JDBC, Hibernate, Spring Boot y un proyecto frontend + API + MySQL.
 
 Los módulos futuros se muestran como **próximamente**. No se presentan como cursos terminados.
@@ -35,6 +37,8 @@ npm run dev
 
 Abre http://localhost:3000. Para las cuentas, copia `.env.example` a `.env.local` y sigue [la configuración de Supabase](docs/setup.md). Sin credenciales, las lecciones y el playground funcionan y la interfaz identifica el progreso como local.
 
+La portada está en `/es` o `/en`, el panel en `/es/dashboard` y el glosario en `/es/glossary`. Puedes consultar el contenido y practicar antes de crear una cuenta.
+
 ```bash
 npm run typecheck
 npm run lint
@@ -45,6 +49,10 @@ npm start
 ```
 
 Para pruebas de navegador, inicia la app y ejecuta `npm run test:e2e`. La configuración local usa Chrome instalado; en CI se instala Chromium.
+
+La auditoría visual recorre 288 combinaciones de pantalla, idioma y tema. Para actualizar las capturas reales de ambos temas ejecuta `node scripts/capture-design.mjs`; `BASE_URL` permite apuntar a otro puerto local.
+
+![JavaQuest en modo claro](docs/images/landing-desktop-light.png)
 
 ## Límites del playground
 

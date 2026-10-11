@@ -13,4 +13,6 @@ JavaQuest's MIT license applies to original application code, not bundled depend
 
 Original Byte robot and JVM diagram were drawn as SVG for JavaQuest. They are not Duolingo assets. External videos are linked, not copied or redistributed.
 
+The redesigned JQ brand mark and responsive JVM diagram are original JavaQuest artwork. Inter (Inter Project Authors), Space Grotesk (Space Grotesk Project Authors), and IBM Plex Mono (IBM Corp.) use SIL Open Font License 1.1. Their complete license texts are distributed under `public/licenses/`. Website references inspired color and layout decisions; their logos, illustrations, and course text were not imported.
+
 `scripts/prepare-java.mjs` retrieves the exact runtime resources recorded in `scripts/java-runtime-lock.json` and rejects different SHA-256 hashes. Runtime files are build artifacts rather than committed binaries. Preserve upstream licenses when redistributing those artifacts; the preparation script includes upstream license texts alongside them.

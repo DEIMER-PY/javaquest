@@ -38,3 +38,16 @@ El conjunto de navegador comprueba traducción, finalización de lección, persi
 - Vercel: proyecto dedicado creado. La revisión automática rechazó cambiar su protección SSO a previews únicamente; publicar producción para toda la clase necesita aprobación de ese ajuste. Un despliegue protegido no equivale a un sitio público.
 
 Las capturas de `docs/images/` se generan desde la aplicación real, no son mockups.
+
+## Rediseño negro/amarillo
+
+- Nueva portada pública y glosario bilingüe de treinta conceptos. El panel pasa a `/{locale}/dashboard`.
+- TypeScript, ESLint y build de producción: aprobados.
+- 16 pruebas unitarias: aprobadas, incluyendo cobertura del glosario y sus enlaces al contenido disponible.
+- 10 pruebas de navegador aprobadas: contraste de tokens en ambos temas, recorrido público, teclado, tema persistente, regresión de aprendizaje y cuatro matrices de 72 combinaciones cada una. Las doce pantallas caben en los seis tamaños probados, desde 320 hasta 1440 px, en ambos idiomas y temas.
+- Los botones principales cumplen 44 px de altura. Los bloques de código largos conservan su desplazamiento interno.
+- El recorrido de aprendizaje y la ejecución Java con errores, múltiples archivos y cancelación permanecen verificados.
+- La pantalla Herramientas dejó de provocar el desbordamiento de 429 px observado en una ventana de 360 px.
+- OAuth, Supabase conectado y la apertura pública de Vercel quedan para la etapa siguiente. Esta entrega conserva las protecciones existentes.
+
+Consulta [el sistema visual y sus referencias](design-system.md). `node scripts/capture-design.mjs` genera capturas reales de portada, glosario, panel, lección, playground y herramientas en claro y oscuro.
