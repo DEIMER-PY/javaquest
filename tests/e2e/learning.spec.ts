@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 test('bilingual navigation, assessment, persistence, and mobile layout', async ({ page }) => {
-  await page.goto('/es');
+  await page.goto('/es/dashboard');
   await expect(page.getByRole('heading', { name: /Tu aventura con Java/ })).toBeVisible();
   await page.screenshot({ path: 'docs/images/dashboard-desktop.png', fullPage: true });
   await page.getByRole('link', { name: 'Comenzar mi aventura' }).click();
@@ -16,7 +16,7 @@ test('bilingual navigation, assessment, persistence, and mobile layout', async (
   await expect(page.getByRole('heading', { name: 'See how far you have come.' })).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/es');
+  await page.goto('/es/dashboard');
   await expect(page.getByRole('button', { name: 'Abrir menú' })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
     true,

@@ -6,6 +6,7 @@ out/
 .vercel/
 coverage/
 test-results/
+test-results*/
 playwright-report/
 *.tsbuildinfo
 next-env.d.ts
