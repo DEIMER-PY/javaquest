@@ -3,7 +3,7 @@ import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center gap-2 whitespace-normal rounded-lg text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
@@ -12,7 +12,12 @@ const buttonVariants = cva(
         ghost: 'hover:bg-muted',
         secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
       },
-      size: { default: 'h-11 px-5', sm: 'h-9 px-3 text-xs', lg: 'h-12 px-6', icon: 'size-10' },
+      size: {
+        default: 'min-h-11 px-5 py-2.5',
+        sm: 'min-h-11 px-3 py-2 text-sm',
+        lg: 'min-h-12 px-6 py-3',
+        icon: 'size-11 shrink-0',
+      },
     },
     defaultVariants: { variant: 'default', size: 'default' },
   },
@@ -28,6 +33,7 @@ function Button({
   return (
     <Comp
       data-slot="button"
+      data-variant={variant ?? 'default'}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     />

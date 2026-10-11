@@ -1,5 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import '@fontsource-variable/inter';
+import '@fontsource-variable/space-grotesk';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
+import { ThemeProvider } from '@/components/theme';
 export const metadata: Metadata = {
   title: { default: 'JavaQuest · Aprende Java, un paso a la vez', template: '%s · JavaQuest' },
   description:
@@ -8,15 +13,17 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" className="dark" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `try { if(localStorage.getItem('javaquest-theme')==='dark') document.documentElement.classList.add('dark'); } catch {}`,
+            __html: `document.documentElement.lang = location.pathname.split('/')[1] === 'en' ? 'en' : 'es'; try { document.documentElement.classList.toggle('dark', localStorage.getItem('javaquest-theme') !== 'light'); } catch {}`,
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
