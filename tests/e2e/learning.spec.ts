@@ -71,7 +71,9 @@ test('own playground compiles Java, supports multiple files, reports errors, and
   await editor.fill('public class Persona { String nombre = "Ada"; }');
   await page.getByRole('button', { name: 'Ejecutar', exact: true }).click();
   await expect(page.locator('.editor-output')).toContainText('Ada');
-  await page.getByRole('button', { name: 'Main.java', exact: true }).click();
+  const mainTab = page.getByRole('button', { name: 'Main.java', exact: true });
+  await mainTab.click();
+  await expect(mainTab).toHaveClass(/active/);
   await editor.fill(
     'public class Main { public static void main(String[] args) { while(true) {} } }',
   );
